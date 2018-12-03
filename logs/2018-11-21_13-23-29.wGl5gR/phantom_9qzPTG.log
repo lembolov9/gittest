@@ -1,0 +1,7 @@
+2018-11-21 13:23:30.556 +0000 [info] [] Start
+2018-11-21 13:24:12.160 +0000 [error] [phantom_logger] bq_sleep: Operation canceled
+2018-11-21 13:24:12.160 +0000 [error] [monitor_io] bq_sleep: Operation canceled
+2018-11-21 13:24:12.160 +0000 [error] [benchmark_io stream_method brief_logger] bq_sleep: Operation canceled
+2018-11-21 13:24:12.161 +0000 [error] [monitor_io] bq_sleep: Operation canceled
+2018-11-21 13:24:12.162 +0000 [error] [benchmark_io] cond-wait: Operation canceled
+2018-11-21 13:24:12.169 +0000 [info] [] Exit

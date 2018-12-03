@@ -1,0 +1,21 @@
+2018-11-21 14:51:44,941	Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/DataUploader/client.py", line 189, in __make_api_request
+    response = self.__send_single_request(request, ids.next(), trace=trace)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/DataUploader/client.py", line 129, in __send_single_request
+    resp = self.session.send(p, timeout=self.connection_timeout)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/adapters.py", line 508, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='overload.yandex.net', port=443): Max retries exceeded with url: /api/job/create.json?api_token=d6412ac067454718a3ec8bb300909fe5 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f2670043dd0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+
+2018-11-21 14:51:44,942	Network error, will retry in 10s...
+2018-11-21 14:51:53,232	Failed post-processing plugin <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7f266ffcc4d0>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 313, in plugins_post_process
+    retcode = plugin.post_process(retcode)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/DataUploader/plugin.py", line 316, in post_process
+    self.events.join()
+  File "/usr/lib/python2.7/threading.py", line 929, in join
+    raise RuntimeError("cannot join thread before it is started")
+RuntimeError: cannot join thread before it is started

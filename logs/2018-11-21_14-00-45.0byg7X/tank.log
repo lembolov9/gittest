@@ -1,0 +1,1254 @@
+2018-11-21 14:00:45,049 [DEBUG] yandextank.core.consoleworker consoleworker.py:275	Ammofile: result.txt
+2018-11-21 14:00:45,058 [INFO] root consoleworker.py:179	/etc/yandex-tank is not accessible to get configs list
+2018-11-21 14:00:45,075 [DEBUG] yandextank.core.tankcore tankcore.py:421	Adding artifact file to collect (keep=False): /tmp/tmpy5WG6W_pre-validation-config.yaml
+2018-11-21 14:00:45,075 [DEBUG] yandextank.core.tankcore tankcore.py:421	Adding artifact file to collect (keep=False): tank.log
+2018-11-21 14:00:45,075 [DEBUG] yandextank.core.tankcore tankcore.py:421	Adding artifact file to collect (keep=False): tank_errors.log
+2018-11-21 14:00:45,323 [INFO] yandextank.core.tankcore tankcore.py:174	Loading plugins...
+2018-11-21 14:00:45,324 [DEBUG] yandextank.core.tankcore tankcore.py:176	Loading plugin phantom from yandextank.plugins.Phantom
+2018-11-21 14:00:45,324 [DEBUG] yandextank.core.tankcore tankcore.py:176	Loading plugin rcheck from yandextank.plugins.ResourceCheck
+2018-11-21 14:00:45,324 [DEBUG] yandextank.core.tankcore tankcore.py:176	Loading plugin json_report from yandextank.plugins.JsonReport
+2018-11-21 14:00:45,324 [DEBUG] yandextank.core.tankcore tankcore.py:176	Loading plugin rcassert from yandextank.plugins.RCAssert
+2018-11-21 14:00:45,324 [DEBUG] yandextank.core.tankcore tankcore.py:176	Loading plugin console from yandextank.plugins.Console
+2018-11-21 14:00:45,324 [DEBUG] yandextank.core.tankcore tankcore.py:176	Loading plugin shellexec from yandextank.plugins.ShellExec
+2018-11-21 14:00:45,324 [DEBUG] yandextank.core.tankcore tankcore.py:176	Loading plugin autostop from yandextank.plugins.Autostop
+2018-11-21 14:00:45,324 [DEBUG] yandextank.core.tankcore tankcore.py:196	Plugin instances: {'plugin_phantom': <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>, 'plugin_autostop': <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>, 'plugin_shellexec': <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>, 'plugin_console': <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>, 'plugin_rcassert': <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>, 'plugin_rcheck': <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>, 'plugin_json_report': <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>}
+2018-11-21 14:00:45,324 [INFO] yandextank.core.consoleworker consoleworker.py:418	Performing test
+2018-11-21 14:00:45,325 [INFO] yandextank.core.tankcore tankcore.py:225	Configuring plugins...
+2018-11-21 14:00:45,325 [DEBUG] yandextank.core.tankcore tankcore.py:231	Configuring <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:00:45,325 [DEBUG] yandextank.core.tankcore tankcore.py:366	Searching for plugin: <class 'yandextank.plugins.Autostop.plugin.Plugin'>
+2018-11-21 14:00:45,325 [DEBUG] yandextank.core.tankcore tankcore.py:421	Adding artifact file to collect (keep=False): /var/loadtest/logs/answ_dgXik8.log
+2018-11-21 14:00:45,326 [DEBUG] yandextank.core.tankcore tankcore.py:421	Adding artifact file to collect (keep=False): /var/loadtest/logs/phout_KIys_N.log
+2018-11-21 14:00:45,326 [DEBUG] yandextank.core.tankcore tankcore.py:421	Adding artifact file to collect (keep=False): /var/loadtest/logs/phantom_stat_UhQ1F8.log
+2018-11-21 14:00:45,326 [DEBUG] yandextank.core.tankcore tankcore.py:421	Adding artifact file to collect (keep=False): /var/loadtest/logs/phantom_8LdFWg.log
+2018-11-21 14:00:45,326 [DEBUG] yandextank.common.util util.py:470	Trying to resolve address string: 127.0.0.1:8000
+2018-11-21 14:00:45,327 [DEBUG] yandextank.common.util util.py:507	Parsing port
+2018-11-21 14:00:45,327 [DEBUG] yandextank.common.util util.py:517	Lookup result: [(2, 1, 6, '', ('127.0.0.1', 8000)), (2, 2, 17, '', ('127.0.0.1', 8000)), (2, 3, 0, '', ('127.0.0.1', 8000))]
+2018-11-21 14:00:45,327 [INFO] yandextank.common.util util.py:536	Testing connection to resolved address 127.0.0.1 and port 8000
+2018-11-21 14:00:45,327 [INFO] yandextank.plugins.Phantom.utils utils.py:278	Resolved 127.0.0.1 into 127.0.0.1:8000
+2018-11-21 14:00:45,327 [INFO] yandextank.stepper.main main.py:161	Configuring StepperWrapper...
+2018-11-21 14:00:45,327 [DEBUG] yandextank.stepper.main main.py:140	Option ammofile = result.txt
+2018-11-21 14:00:45,327 [DEBUG] yandextank.stepper.main main.py:140	Option ammo_type = phantom
+2018-11-21 14:00:45,327 [DEBUG] yandextank.stepper.main main.py:140	Option loop = -1
+2018-11-21 14:00:45,327 [DEBUG] yandextank.stepper.main main.py:140	Option ammo_limit = -1
+2018-11-21 14:00:45,327 [DEBUG] yandextank.stepper.main main.py:140	Option load_profile = {'load_type': 'rps', 'schedule': 'step(1, 9, 2, 4)'}
+2018-11-21 14:00:45,327 [DEBUG] yandextank.stepper.main main.py:140	Option instances = 1000
+2018-11-21 14:00:45,328 [DEBUG] yandextank.stepper.main main.py:140	Option uris = []
+2018-11-21 14:00:45,328 [DEBUG] yandextank.stepper.main main.py:140	Option headers = []
+2018-11-21 14:00:45,328 [DEBUG] yandextank.stepper.main main.py:140	Option header_http = 1.0
+2018-11-21 14:00:45,328 [DEBUG] yandextank.stepper.main main.py:140	Option autocases = 0
+2018-11-21 14:00:45,328 [DEBUG] yandextank.stepper.main main.py:140	Option enum_ammo = False
+2018-11-21 14:00:45,328 [DEBUG] yandextank.stepper.main main.py:140	Option use_caching = False
+2018-11-21 14:00:45,328 [DEBUG] yandextank.stepper.main main.py:140	Option file_cache = 8192
+2018-11-21 14:00:45,328 [DEBUG] yandextank.stepper.main main.py:140	Option cache_dir = None
+2018-11-21 14:00:45,328 [DEBUG] yandextank.stepper.main main.py:140	Option force_stepping = 0
+2018-11-21 14:00:45,328 [DEBUG] yandextank.stepper.main main.py:140	Option load_profile = {'load_type': 'rps', 'schedule': 'step(1, 9, 2, 4)'}
+2018-11-21 14:00:45,328 [DEBUG] yandextank.stepper.main main.py:140	Option chosen_cases = 
+2018-11-21 14:00:45,328 [DEBUG] yandextank.stepper.main main.py:279	Generated cache file name: /var/loadtest/ammo.stpd
+2018-11-21 14:00:45,328 [INFO] yandextank.stepper.main main.py:301	Making stpd-file: /var/loadtest/ammo.stpd
+2018-11-21 14:00:45,328 [DEBUG] yandextank.stepper.info info.py:43	Published 1000 to instances
+2018-11-21 14:00:45,328 [DEBUG] yandextank.stepper.info info.py:43	Published ['step(1, 9, 2, 4)'] to loadscheme
+2018-11-21 14:00:45,329 [DEBUG] yandextank.stepper.info info.py:43	Published 20 to duration
+2018-11-21 14:00:45,329 [DEBUG] yandextank.stepper.info info.py:43	Published [(1, 4), (3, 4), (5, 4), (7, 4), (9, 4)] to steps
+2018-11-21 14:00:45,329 [DEBUG] netort.resource resource.py:119	Resource result.txt format detected: None.
+2018-11-21 14:00:45,329 [INFO] yandextank.stepper.config config.py:108	Default ammo type ('phantom') used, use 'phantom.ammo_type' option to override it
+2018-11-21 14:00:45,329 [INFO] yandextank.stepper.missile missile.py:103	Loading ammo from 'result.txt'
+2018-11-21 14:00:45,329 [INFO] yandextank.stepper.config config.py:123	Using AmmoFileReader ammo reader
+2018-11-21 14:00:45,329 [DEBUG] netort.resource resource.py:119	Resource result.txt format detected: None.
+2018-11-21 14:00:45,332 [DEBUG] yandextank.stepper.main main.py:295	Saving stepper info: /var/loadtest/ammo.stpd_si.json
+2018-11-21 14:00:45,333 [DEBUG] yandextank.core.tankcore tankcore.py:421	Adding artifact file to collect (keep=False): /var/loadtest/logs/phantom_g5gq9X.conf
+2018-11-21 14:00:45,333 [DEBUG] yandextank.plugins.Phantom.utils utils.py:128	Generating phantom config: /var/loadtest/logs/phantom_g5gq9X.conf
+2018-11-21 14:00:45,333 [DEBUG] yandextank.core.tankcore tankcore.py:231	Configuring <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:00:45,333 [DEBUG] yandextank.core.tankcore tankcore.py:366	Searching for plugin: <class 'yandextank.plugins.Telegraf.plugin.Plugin'>
+2018-11-21 14:00:45,333 [DEBUG] yandextank.core.tankcore tankcore.py:205	Telegraf plugin not found:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 203, in job
+    mon = self.get_plugin_of_type(TelegrafPlugin)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 375, in get_plugin_of_type
+    raise KeyError("Requested plugin type not found: %s" % plugin_class)
+KeyError: "Requested plugin type not found: <class 'yandextank.plugins.Telegraf.plugin.Plugin'>"
+2018-11-21 14:00:45,333 [DEBUG] yandextank.core.tankcore tankcore.py:366	Searching for plugin: <class 'yandextank.common.interfaces.GeneratorPlugin'>
+2018-11-21 14:00:45,334 [DEBUG] yandextank.core.tankcore tankcore.py:231	Configuring <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:00:45,334 [DEBUG] yandextank.core.tankcore tankcore.py:231	Configuring <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:00:45,334 [DEBUG] yandextank.core.tankcore tankcore.py:231	Configuring <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:00:45,335 [DEBUG] yandextank.core.tankcore tankcore.py:231	Configuring <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:00:45,335 [DEBUG] yandextank.core.tankcore tankcore.py:231	Configuring <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:00:45,335 [INFO] root tankcore.py:64	Monitoring plugin is not enabled
+2018-11-21 14:00:45,335 [INFO] yandextank.core.tankcore tankcore.py:236	Preparing test...
+2018-11-21 14:00:45,335 [DEBUG] yandextank.core.tankcore tankcore.py:239	Preparing <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:00:45,336 [DEBUG] netort.process process.py:12	Starting: ['phantom', 'check', '/var/loadtest/logs/phantom_g5gq9X.conf']
+2018-11-21 14:00:45,641 [DEBUG] netort.process process.py:35	Process output:
+setup_t module_setup = setup_module_t {
+  dir = "/usr/lib/phantom"
+  list = {
+    io_monitor
+    io_benchmark
+    io_benchmark_method_stream
+    io_benchmark_method_stream_ipv4
+    io_benchmark_method_stream_ipv6
+    io_benchmark_method_stream_source_log
+    io_benchmark_method_stream_proto_none
+    io_benchmark_method_stream_proto_http
+  }
+}
+setup_t stat_setup = setup_stat_t {
+  list = {
+    default
+  }
+}
+scheduler_t main_scheduler = scheduler_simple_t {
+  threads = 5
+  limit = unlimited
+  event_buf_size = 20
+  timeout_prec = 001
+  tname = ""
+  policy = other
+  priority = 0
+}
+logger_t phantom_logger = logger_file_t {
+  level = info
+  filename = "/var/loadtest/logs/phantom_8LdFWg.log"
+  check_interval = 1s
+  scheduler = main_scheduler
+}
+logger = phantom_logger
+io_t benchmark_io = io_benchmark_t {
+  instances = 1000
+  method_t stream_method = method_stream_ipv4_t {
+    address = 127.0.0.1
+    port = 8000
+    bind = {
+    }
+    cork = true
+    timeout = 11s
+    ibuf_size = 4K
+    obuf_size = 1K
+    source_t source_log = source_log_t {
+      filename = "/var/loadtest/ammo.stpd"
+      ibuf_size = 1M
+    }
+    source = source_log
+    transport = NULL
+    proto_t http_proto0 = proto_http_t {
+      reply_limits = {
+        line = 1K
+        field_num = 128
+        field = 8K
+        entity = 8M
+      }
+    }
+    proto_t none_proto = proto_none_t {
+    }
+    proto = http_proto0
+    logger_t benchmark_logger = logger_default_t {
+      filename = "/var/loadtest/logs/answ_dgXik8.log"
+      check_interval = 1s
+      scheduler = main_scheduler
+      level = all
+    }
+    logger_t brief_logger = logger_brief_t {
+      time_format = unix
+      filename = "/var/loadtest/logs/phout_KIys_N.log"
+      check_interval = 1s
+      scheduler = main_scheduler
+      level = all
+    }
+    loggers = {
+      brief_logger
+      benchmark_logger
+    }
+  }
+  method = stream_method
+  times_t simple_times = times_simple_t {
+    max = 11s
+    min = 001
+    steps = 20
+  }
+  times = simple_times
+  scheduler = main_scheduler
+}
+io_t monitor_io = io_monitor_t {
+  clear = true
+  period = 1s
+  list = {
+    main_scheduler
+    benchmark_io
+  }
+  stat_id = default
+  filename = "/var/loadtest/logs/phantom_stat_UhQ1F8.log"
+  check_interval = 1s
+  scheduler = main_scheduler
+}
+
+2018-11-21 14:00:45,642 [DEBUG] netort.process process.py:37	Process exit code: 0
+2018-11-21 14:00:45,642 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:114	Linking sample reader to aggregator. Reading samples from /var/loadtest/logs/phout_KIys_N.log
+2018-11-21 14:00:45,642 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:118	Linking stats reader to aggregator. Reading stats from /var/loadtest/logs/phantom_stat_UhQ1F8.log
+2018-11-21 14:00:45,642 [DEBUG] yandextank.plugins.Phantom.utils utils.py:158	Steps: [(1, 4), (3, 4), (5, 4), (7, 4), (9, 4)]
+2018-11-21 14:00:45,642 [DEBUG] yandextank.core.tankcore tankcore.py:366	Searching for plugin: <class 'yandextank.plugins.Console.plugin.Plugin'>
+2018-11-21 14:00:45,642 [DEBUG] yandextank.plugins.Phantom.utils utils.py:158	Steps: [(1, 4), (3, 4), (5, 4), (7, 4), (9, 4)]
+2018-11-21 14:00:45,642 [DEBUG] yandextank.core.tankcore tankcore.py:239	Preparing <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:00:45,643 [DEBUG] yandextank.common.interfaces plugin.py:78	Criterion objects: {}
+2018-11-21 14:00:45,643 [DEBUG] yandextank.core.tankcore tankcore.py:366	Searching for plugin: <class 'yandextank.plugins.Console.plugin.Plugin'>
+2018-11-21 14:00:45,643 [DEBUG] yandextank.core.tankcore tankcore.py:239	Preparing <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:00:45,643 [DEBUG] yandextank.core.tankcore tankcore.py:239	Preparing <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:00:45,643 [DEBUG] yandextank.core.tankcore tankcore.py:239	Preparing <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:00:45,643 [DEBUG] yandextank.core.tankcore tankcore.py:239	Preparing <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:00:45,643 [INFO] yandextank.common.interfaces plugin.py:39	Checking tank resources...
+2018-11-21 14:00:45,643 [DEBUG] netort.process process.py:12	Starting: sh -c "df --no-sync -m -P -l -x fuse -x tmpfs -x devtmpfs -x davfs -x nfs ./logs | tail -n 1 | awk '{print \$4}' "
+2018-11-21 14:00:45,956 [DEBUG] netort.process process.py:35	Process output:
+166615
+
+2018-11-21 14:00:45,957 [DEBUG] netort.process process.py:37	Process exit code: 0
+2018-11-21 14:00:45,957 [DEBUG] root plugin.py:58	Result: (0, '166615\n', '')
+2018-11-21 14:00:45,957 [DEBUG] yandextank.common.interfaces plugin.py:64	Disk free space: 166615/2048
+2018-11-21 14:00:45,957 [DEBUG] yandextank.common.interfaces plugin.py:75	Memory free: 4853/512
+2018-11-21 14:00:45,957 [DEBUG] yandextank.core.tankcore tankcore.py:239	Preparing <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:00:45,957 [INFO] yandextank.core.tankcore tankcore.py:244	Starting test...
+2018-11-21 14:00:45,958 [DEBUG] yandextank.plugins.Phantom.utils utils.py:158	Steps: [(1, 4), (3, 4), (5, 4), (7, 4), (9, 4)]
+2018-11-21 14:00:45,958 [INFO] yandextank.aggregator.tank_aggregator tank_aggregator.py:63	using verbose histogram
+2018-11-21 14:00:45,959 [DEBUG] yandextank.core.tankcore tankcore.py:248	Starting <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:00:45,959 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:142	Starting phantom with arguments: ['phantom', 'run', '/var/loadtest/logs/phantom_g5gq9X.conf']
+2018-11-21 14:00:45,959 [DEBUG] yandextank.core.tankcore tankcore.py:421	Adding artifact file to collect (keep=False): /var/loadtest/logs/phantom_stdout_stderr_HppCrs.log
+2018-11-21 14:00:46,299 [INFO] yandextank.core.tankcore tankcore.py:252	Plugin <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0> required 0.340091 seconds to start
+2018-11-21 14:00:46,300 [DEBUG] yandextank.core.tankcore tankcore.py:248	Starting <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:00:46,300 [INFO] yandextank.core.tankcore tankcore.py:252	Plugin <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050> required 0.000008 seconds to start
+2018-11-21 14:00:46,300 [DEBUG] yandextank.core.tankcore tankcore.py:248	Starting <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:00:46,300 [INFO] yandextank.core.tankcore tankcore.py:252	Plugin <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090> required 0.000005 seconds to start
+2018-11-21 14:00:46,300 [DEBUG] yandextank.core.tankcore tankcore.py:248	Starting <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:00:46,300 [INFO] yandextank.core.tankcore tankcore.py:252	Plugin <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390> required 0.000002 seconds to start
+2018-11-21 14:00:46,300 [DEBUG] yandextank.core.tankcore tankcore.py:248	Starting <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:00:46,300 [INFO] yandextank.core.tankcore tankcore.py:252	Plugin <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10> required 0.000001 seconds to start
+2018-11-21 14:00:46,301 [DEBUG] yandextank.core.tankcore tankcore.py:248	Starting <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:00:46,301 [INFO] yandextank.core.tankcore tankcore.py:252	Plugin <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0> required 0.000001 seconds to start
+2018-11-21 14:00:46,301 [DEBUG] yandextank.core.tankcore tankcore.py:248	Starting <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:00:46,301 [INFO] yandextank.core.tankcore tankcore.py:252	Plugin <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50> required 0.000001 seconds to start
+2018-11-21 14:00:46,301 [INFO] yandextank.core.tankcore tankcore.py:259	Waiting for test to finish...
+2018-11-21 14:00:46,301 [INFO] yandextank.core.tankcore tankcore.py:260	Artifacts dir: /var/loadtest/logs/2018-11-21_14-00-45.0byg7X
+2018-11-21 14:00:46,301 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2018-11-21 14:00:46,301 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2018-11-21 14:00:46,301 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:00:46,301 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 19
+2018-11-21 14:00:46,301 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:00:46,301 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:00:46,301 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:00:46,302 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:00:46,302 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:00:46,303 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:00:46,303 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:00:46,303 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:00:46,304 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:00:46,304 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:00:46,304 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:00:46,305 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:00:46,305 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:00:46,305 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:00:46,305 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:00:46,305 [DEBUG] netort.process process.py:12	Starting: sh -c "df --no-sync -m -P -l -x fuse -x tmpfs -x devtmpfs -x davfs -x nfs ./logs | tail -n 1 | awk '{print \$4}' "
+2018-11-21 14:00:46,608 [DEBUG] netort.process process.py:35	Process output:
+166615
+
+2018-11-21 14:00:46,608 [DEBUG] netort.process process.py:37	Process exit code: 0
+2018-11-21 14:00:46,608 [DEBUG] root plugin.py:58	Result: (0, '166615\n', '')
+2018-11-21 14:00:46,608 [DEBUG] yandextank.common.interfaces plugin.py:64	Disk free space: 166615/2048
+2018-11-21 14:00:46,609 [DEBUG] yandextank.common.interfaces plugin.py:75	Memory free: 4877/512
+2018-11-21 14:00:46,609 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:00:46,609 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.307827949524
+2018-11-21 14:00:46,609 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 19}}
+2018-11-21 14:00:46,802 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2018-11-21 14:00:46,803 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2018-11-21 14:00:46,803 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:00:46,803 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 19
+2018-11-21 14:00:46,804 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:00:46,804 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:00:46,804 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:00:46,805 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:00:46,805 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:00:46,805 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:00:46,805 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:00:46,806 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:00:46,806 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:00:46,806 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:00:46,807 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:00:46,808 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:00:46,808 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:00:46,808 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:00:46,808 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:00:46,808 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:00:46,808 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.00655388832092
+2018-11-21 14:00:46,809 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 19}}
+2018-11-21 14:00:46,982 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 21.79ms
+2018-11-21 14:00:47,303 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2018-11-21 14:00:47,303 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2018-11-21 14:00:47,304 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:00:47,304 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 18
+2018-11-21 14:00:47,304 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:00:47,305 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:00:47,305 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:00:47,305 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:00:47,305 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:00:47,306 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:00:47,306 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:00:47,306 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:00:47,306 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:00:47,307 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:00:47,309 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:00:47,310 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:00:47,310 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:00:47,310 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:00:47,311 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:00:47,312 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:00:47,312 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.00926899909973
+2018-11-21 14:00:47,312 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 18}}
+2018-11-21 14:00:47,804 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2018-11-21 14:00:47,804 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2018-11-21 14:00:47,804 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:00:47,804 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 18
+2018-11-21 14:00:47,804 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:00:47,804 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:00:47,804 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:00:47,805 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:00:47,805 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:00:47,805 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:00:47,805 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:00:47,805 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:00:47,805 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:00:47,805 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:00:47,806 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:00:47,806 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:00:47,806 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:00:47,806 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:00:47,806 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:00:47,807 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:00:47,807 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.00304484367371
+2018-11-21 14:00:47,807 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 18}}
+2018-11-21 14:00:48,006 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 15.58ms
+2018-11-21 14:00:48,305 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2018-11-21 14:00:48,305 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2018-11-21 14:00:48,305 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:00:48,306 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 17
+2018-11-21 14:00:48,306 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:00:48,306 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:00:48,306 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:00:48,306 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:00:48,306 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:00:48,307 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:00:48,307 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:00:48,307 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:00:48,307 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:00:48,307 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:00:48,309 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:00:48,309 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:00:48,309 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:00:48,310 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:00:48,310 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:00:48,310 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:00:48,311 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.00589203834534
+2018-11-21 14:00:48,311 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 17}}
+2018-11-21 14:00:48,806 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2018-11-21 14:00:48,806 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2018-11-21 14:00:48,806 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:00:48,807 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 17
+2018-11-21 14:00:48,807 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:00:48,807 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:00:48,808 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:00:48,808 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:00:48,808 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:00:48,808 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:00:48,809 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:00:48,809 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:00:48,809 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:00:48,810 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:00:48,811 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:00:48,812 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:00:48,813 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:00:48,813 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:00:48,813 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:00:48,814 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:00:48,814 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.00857615470886
+2018-11-21 14:00:48,814 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 17}}
+2018-11-21 14:00:49,017 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 4.13ms
+2018-11-21 14:00:49,307 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2018-11-21 14:00:49,307 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1542808846]
+2018-11-21 14:00:49,308 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:00:49,308 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 16
+2018-11-21 14:00:49,309 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:00:49,309 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:00:49,309 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:00:49,310 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:00:49,310 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:00:49,310 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:00:49,311 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:00:49,311 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:00:49,311 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:00:49,312 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:00:49,314 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:00:49,315 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:00:49,315 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:00:49,315 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:00:49,316 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:00:49,317 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:00:49,317 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.0103549957275
+2018-11-21 14:00:49,317 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 16}}
+2018-11-21 14:00:49,808 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2018-11-21 14:00:49,809 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2018-11-21 14:00:49,810 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:00:49,810 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 16
+2018-11-21 14:00:49,810 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:00:49,811 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:00:49,811 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:00:49,811 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:00:49,811 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:00:49,812 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:00:49,812 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:00:49,812 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:00:49,812 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:00:49,813 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:00:49,814 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:00:49,815 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:00:49,816 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:00:49,816 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:00:49,817 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:00:49,817 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:00:49,818 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.00970888137817
+2018-11-21 14:00:49,818 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 16}}
+2018-11-21 14:00:50,035 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 15.37ms
+2018-11-21 14:00:50,060 [DEBUG] yandextank.aggregator.aggregator aggregator.py:160	Aggregation time: 15.12ms
+2018-11-21 14:00:50,309 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1542808846]
+2018-11-21 14:00:50,310 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1542808847]
+2018-11-21 14:00:50,311 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:189	Processed ammo count: 1/
+2018-11-21 14:00:50,311 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:00:50,312 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 15
+2018-11-21 14:00:50,312 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:00:50,312 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:00:50,312 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:00:50,312 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:00:50,312 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:00:50,312 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:00:50,312 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:00:50,313 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:00:50,313 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:00:50,313 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:00:50,316 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:00:50,317 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:00:50,317 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:00:50,317 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:00:50,317 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:00:50,317 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:00:50,317 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.00827789306641
+2018-11-21 14:00:50,318 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 15}}
+2018-11-21 14:00:50,810 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2018-11-21 14:00:50,811 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2018-11-21 14:00:50,811 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:00:50,811 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 15
+2018-11-21 14:00:50,812 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:00:50,812 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:00:50,812 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:00:50,812 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:00:50,813 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:00:50,813 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:00:50,813 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:00:50,813 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:00:50,814 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:00:50,814 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:00:50,823 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:00:50,825 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:00:50,825 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:00:50,825 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:00:50,826 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:00:50,826 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:00:50,827 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.0168929100037
+2018-11-21 14:00:50,827 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 15}}
+2018-11-21 14:00:51,076 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 15.06ms
+2018-11-21 14:00:51,100 [DEBUG] yandextank.aggregator.aggregator aggregator.py:160	Aggregation time: 13.49ms
+2018-11-21 14:00:51,311 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1542808847]
+2018-11-21 14:00:51,312 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1542808848]
+2018-11-21 14:00:51,317 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:189	Processed ammo count: 2/
+2018-11-21 14:00:51,318 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:00:51,318 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 14
+2018-11-21 14:00:51,319 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:00:51,319 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:00:51,320 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:00:51,320 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:00:51,320 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:00:51,321 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:00:51,321 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:00:51,322 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:00:51,322 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:00:51,323 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:00:51,335 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:00:51,336 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:00:51,337 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:00:51,337 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:00:51,338 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:00:51,338 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:00:51,339 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.027398109436
+2018-11-21 14:00:51,339 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 14}}
+2018-11-21 14:00:51,813 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2018-11-21 14:00:51,813 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2018-11-21 14:00:51,813 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:00:51,814 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 14
+2018-11-21 14:00:51,814 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:00:51,814 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:00:51,815 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:00:51,815 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:00:51,815 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:00:51,815 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:00:51,816 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:00:51,816 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:00:51,816 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:00:51,816 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:00:51,828 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:00:51,829 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:00:51,829 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:00:51,830 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:00:51,831 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:00:51,831 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:00:51,831 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.0188701152802
+2018-11-21 14:00:51,832 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 14}}
+2018-11-21 14:00:52,117 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 15.40ms
+2018-11-21 14:00:52,140 [DEBUG] yandextank.aggregator.aggregator aggregator.py:160	Aggregation time: 13.24ms
+2018-11-21 14:00:52,314 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1542808848]
+2018-11-21 14:00:52,314 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1542808849]
+2018-11-21 14:00:52,315 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:189	Processed ammo count: 3/
+2018-11-21 14:00:52,315 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:00:52,315 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 13
+2018-11-21 14:00:52,315 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:00:52,315 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:00:52,315 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:00:52,315 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:00:52,315 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:00:52,315 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:00:52,316 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:00:52,316 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:00:52,316 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:00:52,316 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:00:52,320 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:00:52,320 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:00:52,320 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:00:52,320 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:00:52,320 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:00:52,320 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:00:52,321 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.00700712203979
+2018-11-21 14:00:52,321 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 13}}
+2018-11-21 14:00:52,814 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2018-11-21 14:00:52,815 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2018-11-21 14:00:52,815 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:00:52,816 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 13
+2018-11-21 14:00:52,816 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:00:52,816 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:00:52,816 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:00:52,817 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:00:52,817 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:00:52,817 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:00:52,817 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:00:52,818 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:00:52,818 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:00:52,818 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:00:52,833 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:00:52,834 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:00:52,834 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:00:52,835 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:00:52,835 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:00:52,836 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:00:52,836 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.0219640731812
+2018-11-21 14:00:52,837 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 13}}
+2018-11-21 14:00:53,158 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 16.19ms
+2018-11-21 14:00:53,184 [DEBUG] yandextank.aggregator.aggregator aggregator.py:160	Aggregation time: 15.25ms
+2018-11-21 14:00:53,316 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1542808849]
+2018-11-21 14:00:53,316 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1542808850]
+2018-11-21 14:00:53,320 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:189	Processed ammo count: 4/
+2018-11-21 14:00:53,320 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:00:53,321 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 12
+2018-11-21 14:00:53,321 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:00:53,321 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:00:53,321 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:00:53,322 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:00:53,322 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:00:53,322 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:00:53,322 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:00:53,323 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:00:53,323 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:00:53,323 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:00:53,340 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:00:53,342 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:00:53,342 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:00:53,343 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:00:53,343 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:00:53,344 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:00:53,344 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.0285129547119
+2018-11-21 14:00:53,344 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 12}}
+2018-11-21 14:00:53,817 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2018-11-21 14:00:53,817 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2018-11-21 14:00:53,818 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:00:53,818 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 12
+2018-11-21 14:00:53,818 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:00:53,819 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:00:53,819 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:00:53,819 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:00:53,819 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:00:53,820 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:00:53,820 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:00:53,820 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:00:53,821 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:00:53,821 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:00:53,837 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:00:53,838 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:00:53,839 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:00:53,839 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:00:53,840 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:00:53,840 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:00:53,841 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.0239081382751
+2018-11-21 14:00:53,841 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 12}}
+2018-11-21 14:00:54,200 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 14.83ms
+2018-11-21 14:00:54,232 [DEBUG] yandextank.aggregator.aggregator aggregator.py:160	Aggregation time: 21.24ms
+2018-11-21 14:00:54,318 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1542808850]
+2018-11-21 14:00:54,319 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1542808851]
+2018-11-21 14:00:54,323 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:189	Processed ammo count: 7/
+2018-11-21 14:00:54,323 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:00:54,324 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 11
+2018-11-21 14:00:54,324 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:00:54,324 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:00:54,324 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:00:54,325 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:00:54,325 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:00:54,325 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:00:54,325 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:00:54,326 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:00:54,326 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:00:54,327 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:00:54,347 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:00:54,348 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:00:54,349 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:00:54,349 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:00:54,349 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:00:54,349 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:00:54,350 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.0317549705505
+2018-11-21 14:00:54,350 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 11}}
+2018-11-21 14:00:54,819 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2018-11-21 14:00:54,819 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2018-11-21 14:00:54,820 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:00:54,820 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 11
+2018-11-21 14:00:54,820 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:00:54,821 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:00:54,821 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:00:54,821 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:00:54,821 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:00:54,822 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:00:54,822 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:00:54,822 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:00:54,823 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:00:54,823 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:00:54,843 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:00:54,844 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:00:54,844 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:00:54,845 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:00:54,845 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:00:54,846 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:00:54,846 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.0274350643158
+2018-11-21 14:00:54,846 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 11}}
+2018-11-21 14:00:55,249 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 15.73ms
+2018-11-21 14:00:55,282 [DEBUG] yandextank.aggregator.aggregator aggregator.py:160	Aggregation time: 21.45ms
+2018-11-21 14:00:55,295 [DEBUG] yandextank.aggregator.aggregator aggregator.py:160	Aggregation time: 11.04ms
+2018-11-21 14:00:55,320 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1542808851, 1542808852]
+2018-11-21 14:00:55,320 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1542808852]
+2018-11-21 14:00:55,321 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:189	Processed ammo count: 10/
+2018-11-21 14:00:55,322 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:189	Processed ammo count: 13/
+2018-11-21 14:00:55,322 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:00:55,322 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 10
+2018-11-21 14:00:55,322 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:00:55,322 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:00:55,322 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:00:55,322 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:00:55,322 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:00:55,323 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:00:55,323 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:00:55,323 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:00:55,323 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:00:55,323 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:00:55,329 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:00:55,330 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:00:55,330 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:00:55,330 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:00:55,330 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:00:55,330 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:00:55,330 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.0107138156891
+2018-11-21 14:00:55,330 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 10}}
+2018-11-21 14:00:55,821 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2018-11-21 14:00:55,821 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2018-11-21 14:00:55,821 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:00:55,822 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 10
+2018-11-21 14:00:55,822 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:00:55,822 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:00:55,823 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:00:55,823 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:00:55,823 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:00:55,823 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:00:55,824 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:00:55,824 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:00:55,824 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:00:55,824 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:00:55,848 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:00:55,850 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:00:55,850 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:00:55,850 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:00:55,851 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:00:55,851 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:00:55,851 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.030858039856
+2018-11-21 14:00:55,851 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 10}}
+2018-11-21 14:00:56,312 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 15.99ms
+2018-11-21 14:00:56,324 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2018-11-21 14:00:56,327 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1542808853]
+2018-11-21 14:00:56,328 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:00:56,330 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 9
+2018-11-21 14:00:56,331 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:00:56,331 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:00:56,333 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:00:56,334 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:00:56,334 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:00:56,334 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:00:56,334 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:00:56,334 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:00:56,334 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:00:56,335 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:00:56,348 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:00:56,349 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:00:56,349 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:00:56,349 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:00:56,349 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:00:56,350 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:00:56,350 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.0260789394379
+2018-11-21 14:00:56,350 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 9}}
+2018-11-21 14:00:56,357 [DEBUG] yandextank.aggregator.aggregator aggregator.py:160	Aggregation time: 30.20ms
+2018-11-21 14:00:56,825 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1542808853]
+2018-11-21 14:00:56,825 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2018-11-21 14:00:56,830 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:189	Processed ammo count: 16/
+2018-11-21 14:00:56,830 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:00:56,831 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 9
+2018-11-21 14:00:56,831 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:00:56,831 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:00:56,831 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:00:56,832 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:00:56,832 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:00:56,832 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:00:56,832 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:00:56,833 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:00:56,833 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:00:56,833 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:00:56,856 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:00:56,857 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:00:56,857 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:00:56,857 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:00:56,858 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:00:56,858 [DEBUG] netort.process process.py:12	Starting: sh -c "df --no-sync -m -P -l -x fuse -x tmpfs -x devtmpfs -x davfs -x nfs ./logs | tail -n 1 | awk '{print \$4}' "
+2018-11-21 14:00:57,186 [DEBUG] netort.process process.py:35	Process output:
+166614
+
+2018-11-21 14:00:57,186 [DEBUG] netort.process process.py:37	Process exit code: 0
+2018-11-21 14:00:57,186 [DEBUG] root plugin.py:58	Result: (0, '166614\n', '')
+2018-11-21 14:00:57,186 [DEBUG] yandextank.common.interfaces plugin.py:64	Disk free space: 166614/2048
+2018-11-21 14:00:57,186 [DEBUG] yandextank.common.interfaces plugin.py:75	Memory free: 4862/512
+2018-11-21 14:00:57,186 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:00:57,186 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.36169719696
+2018-11-21 14:00:57,187 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 9}}
+2018-11-21 14:00:57,325 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2018-11-21 14:00:57,326 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1542808854]
+2018-11-21 14:00:57,326 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:00:57,327 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 8
+2018-11-21 14:00:57,327 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:00:57,328 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:00:57,328 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:00:57,328 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:00:57,329 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:00:57,329 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:00:57,329 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:00:57,329 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:00:57,330 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:00:57,330 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:00:57,349 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:00:57,349 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:00:57,349 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:00:57,349 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:00:57,350 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:00:57,350 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:00:57,350 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.0248959064484
+2018-11-21 14:00:57,350 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 8}}
+2018-11-21 14:00:57,365 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 6.34ms
+2018-11-21 14:00:57,390 [DEBUG] yandextank.aggregator.aggregator aggregator.py:160	Aggregation time: 19.48ms
+2018-11-21 14:00:57,826 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1542808854]
+2018-11-21 14:00:57,827 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2018-11-21 14:00:57,831 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:189	Processed ammo count: 20/
+2018-11-21 14:00:57,831 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:00:57,832 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 8
+2018-11-21 14:00:57,832 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:00:57,832 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:00:57,832 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:00:57,833 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:00:57,833 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:00:57,833 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:00:57,833 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:00:57,834 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:00:57,834 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:00:57,834 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:00:57,860 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:00:57,860 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:00:57,861 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:00:57,861 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:00:57,861 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:00:57,861 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:00:57,861 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.035521030426
+2018-11-21 14:00:57,862 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 8}}
+2018-11-21 14:00:58,327 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2018-11-21 14:00:58,327 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1542808855]
+2018-11-21 14:00:58,328 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:00:58,328 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 7
+2018-11-21 14:00:58,328 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:00:58,329 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:00:58,329 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:00:58,329 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:00:58,330 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:00:58,330 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:00:58,330 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:00:58,330 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:00:58,331 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:00:58,331 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:00:58,360 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:00:58,361 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:00:58,361 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:00:58,361 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:00:58,361 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:00:58,362 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:00:58,362 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.0352020263672
+2018-11-21 14:00:58,362 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 7}}
+2018-11-21 14:00:58,396 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 5.01ms
+2018-11-21 14:00:58,421 [DEBUG] yandextank.aggregator.aggregator aggregator.py:160	Aggregation time: 19.72ms
+2018-11-21 14:00:58,828 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1542808855]
+2018-11-21 14:00:58,828 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2018-11-21 14:00:58,833 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:189	Processed ammo count: 25/
+2018-11-21 14:00:58,833 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:00:58,834 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 7
+2018-11-21 14:00:58,834 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:00:58,834 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:00:58,834 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:00:58,835 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:00:58,835 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:00:58,835 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:00:58,835 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:00:58,836 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:00:58,836 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:00:58,836 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:00:58,864 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:00:58,865 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:00:58,865 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:00:58,866 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:00:58,866 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:00:58,866 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:00:58,866 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.0385529994965
+2018-11-21 14:00:58,866 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 7}}
+2018-11-21 14:00:59,329 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2018-11-21 14:00:59,329 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1542808856]
+2018-11-21 14:00:59,329 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:00:59,330 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 6
+2018-11-21 14:00:59,330 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:00:59,330 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:00:59,330 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:00:59,331 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:00:59,331 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:00:59,331 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:00:59,331 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:00:59,332 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:00:59,332 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:00:59,332 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:00:59,364 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:00:59,365 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:00:59,365 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:00:59,366 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:00:59,366 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:00:59,366 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:00:59,366 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.0378720760345
+2018-11-21 14:00:59,366 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 6}}
+2018-11-21 14:00:59,438 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 15.42ms
+2018-11-21 14:00:59,482 [DEBUG] yandextank.aggregator.aggregator aggregator.py:160	Aggregation time: 26.20ms
+2018-11-21 14:00:59,829 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1542808856]
+2018-11-21 14:00:59,830 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2018-11-21 14:00:59,834 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:189	Processed ammo count: 30/
+2018-11-21 14:00:59,835 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:00:59,835 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 6
+2018-11-21 14:00:59,835 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:00:59,835 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:00:59,836 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:00:59,836 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:00:59,836 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:00:59,836 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:00:59,837 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:00:59,837 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:00:59,837 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:00:59,838 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:00:59,863 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:00:59,864 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:00:59,864 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:00:59,864 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:00:59,865 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:00:59,865 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:00:59,865 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.0356330871582
+2018-11-21 14:00:59,865 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 6}}
+2018-11-21 14:01:00,330 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2018-11-21 14:01:00,330 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1542808857]
+2018-11-21 14:01:00,331 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:01:00,331 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 5
+2018-11-21 14:01:00,331 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:01:00,332 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:01:00,332 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:01:00,332 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:01:00,333 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:01:00,333 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:01:00,333 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:01:00,334 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:01:00,334 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:01:00,334 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:01:00,363 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:01:00,364 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:01:00,364 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:01:00,364 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:01:00,364 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:01:00,364 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:01:00,365 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.0348770618439
+2018-11-21 14:01:00,365 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 5}}
+2018-11-21 14:01:00,503 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 18.98ms
+2018-11-21 14:01:00,538 [DEBUG] yandextank.aggregator.aggregator aggregator.py:160	Aggregation time: 21.67ms
+2018-11-21 14:01:00,831 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1542808857]
+2018-11-21 14:01:00,831 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2018-11-21 14:01:00,836 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:189	Processed ammo count: 35/
+2018-11-21 14:01:00,836 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:01:00,837 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 5
+2018-11-21 14:01:00,837 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:01:00,837 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:01:00,837 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:01:00,838 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:01:00,838 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:01:00,838 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:01:00,838 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:01:00,839 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:01:00,839 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:01:00,839 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:01:00,868 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:01:00,868 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:01:00,869 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:01:00,869 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:01:00,869 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:01:00,869 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:01:00,870 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.0388050079346
+2018-11-21 14:01:00,870 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 5}}
+2018-11-21 14:01:01,332 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2018-11-21 14:01:01,332 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1542808858]
+2018-11-21 14:01:01,333 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:01:01,333 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 4
+2018-11-21 14:01:01,333 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:01:01,333 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:01:01,334 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:01:01,334 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:01:01,334 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:01:01,334 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:01:01,335 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:01:01,335 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:01:01,335 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:01:01,336 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:01:01,366 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:01:01,367 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:01:01,367 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:01:01,367 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:01:01,367 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:01:01,367 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:01:01,367 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.0357789993286
+2018-11-21 14:01:01,368 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 4}}
+2018-11-21 14:01:01,555 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 15.10ms
+2018-11-21 14:01:01,598 [DEBUG] yandextank.aggregator.aggregator aggregator.py:160	Aggregation time: 26.51ms
+2018-11-21 14:01:01,832 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1542808858]
+2018-11-21 14:01:01,833 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2018-11-21 14:01:01,835 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:189	Processed ammo count: 41/
+2018-11-21 14:01:01,835 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:01:01,835 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 4
+2018-11-21 14:01:01,835 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:01:01,835 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:01:01,835 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:01:01,835 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:01:01,835 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:01:01,835 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:01:01,835 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:01:01,836 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:01:01,836 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:01:01,836 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:01:01,848 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:01:01,848 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:01:01,848 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:01:01,849 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:01:01,849 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:01:01,849 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:01:01,849 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.0167248249054
+2018-11-21 14:01:01,849 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 4}}
+2018-11-21 14:01:02,333 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2018-11-21 14:01:02,334 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1542808859]
+2018-11-21 14:01:02,334 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:01:02,334 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 3
+2018-11-21 14:01:02,335 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:01:02,335 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:01:02,335 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:01:02,335 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:01:02,336 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:01:02,336 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:01:02,336 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:01:02,336 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:01:02,337 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:01:02,337 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:01:02,369 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:01:02,369 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:01:02,369 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:01:02,370 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:01:02,370 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:01:02,370 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:01:02,370 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.0373089313507
+2018-11-21 14:01:02,371 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 3}}
+2018-11-21 14:01:02,615 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 15.70ms
+2018-11-21 14:01:02,657 [DEBUG] yandextank.aggregator.aggregator aggregator.py:160	Aggregation time: 28.14ms
+2018-11-21 14:01:02,834 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1542808859]
+2018-11-21 14:01:02,835 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2018-11-21 14:01:02,839 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:189	Processed ammo count: 48/
+2018-11-21 14:01:02,840 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:01:02,840 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 3
+2018-11-21 14:01:02,840 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:01:02,841 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:01:02,841 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:01:02,841 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:01:02,841 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:01:02,842 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:01:02,842 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:01:02,842 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:01:02,842 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:01:02,843 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:01:02,871 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:01:02,872 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:01:02,872 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:01:02,872 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:01:02,872 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:01:02,873 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:01:02,873 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.038731098175
+2018-11-21 14:01:02,873 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 3}}
+2018-11-21 14:01:03,335 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2018-11-21 14:01:03,335 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1542808860]
+2018-11-21 14:01:03,336 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:01:03,336 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 2
+2018-11-21 14:01:03,336 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:01:03,336 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:01:03,337 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:01:03,337 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:01:03,337 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:01:03,337 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:01:03,338 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:01:03,338 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:01:03,338 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:01:03,339 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:01:03,370 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:01:03,371 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:01:03,371 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:01:03,371 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:01:03,372 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:01:03,372 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:01:03,372 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.0372910499573
+2018-11-21 14:01:03,372 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 2}}
+2018-11-21 14:01:03,674 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 15.97ms
+2018-11-21 14:01:03,718 [DEBUG] yandextank.aggregator.aggregator aggregator.py:160	Aggregation time: 26.79ms
+2018-11-21 14:01:03,836 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1542808860]
+2018-11-21 14:01:03,836 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2018-11-21 14:01:03,841 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:189	Processed ammo count: 55/
+2018-11-21 14:01:03,842 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:01:03,842 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 2
+2018-11-21 14:01:03,842 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:01:03,843 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:01:03,843 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:01:03,843 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:01:03,843 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:01:03,844 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:01:03,844 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:01:03,845 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:01:03,845 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:01:03,845 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:01:03,877 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:01:03,877 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:01:03,877 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:01:03,877 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:01:03,878 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:01:03,878 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:01:03,878 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.0423228740692
+2018-11-21 14:01:03,878 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 2}}
+2018-11-21 14:01:04,336 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2018-11-21 14:01:04,337 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1542808861]
+2018-11-21 14:01:04,337 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:01:04,338 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 1
+2018-11-21 14:01:04,338 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:01:04,338 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:01:04,338 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:01:04,339 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:01:04,339 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:01:04,339 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:01:04,339 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:01:04,340 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:01:04,340 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:01:04,340 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:01:04,375 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:01:04,375 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:01:04,375 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:01:04,376 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:01:04,376 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:01:04,376 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:01:04,376 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.039932012558
+2018-11-21 14:01:04,376 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 1}}
+2018-11-21 14:01:04,734 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 15.44ms
+2018-11-21 14:01:04,781 [DEBUG] yandextank.aggregator.aggregator aggregator.py:160	Aggregation time: 33.04ms
+2018-11-21 14:01:04,837 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1542808861]
+2018-11-21 14:01:04,837 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2018-11-21 14:01:04,840 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:189	Processed ammo count: 62/
+2018-11-21 14:01:04,840 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:01:04,840 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 1
+2018-11-21 14:01:04,840 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:01:04,840 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:01:04,840 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:01:04,841 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:01:04,841 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:01:04,841 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:01:04,841 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:01:04,841 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:01:04,841 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:01:04,841 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:01:04,856 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:01:04,857 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:01:04,857 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:01:04,857 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:01:04,857 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:01:04,857 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:01:04,857 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.0204150676727
+2018-11-21 14:01:04,858 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 1}}
+2018-11-21 14:01:05,338 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2018-11-21 14:01:05,338 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1542808862]
+2018-11-21 14:01:05,338 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:01:05,338 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 0
+2018-11-21 14:01:05,338 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:01:05,339 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:01:05,339 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:01:05,339 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:01:05,339 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:01:05,339 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:01:05,339 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:01:05,339 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:01:05,340 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:01:05,340 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:01:05,360 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:01:05,361 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:01:05,361 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:01:05,361 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:01:05,361 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:01:05,361 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:01:05,361 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.0240139961243
+2018-11-21 14:01:05,362 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 0}}
+2018-11-21 14:01:05,798 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 15.66ms
+2018-11-21 14:01:05,838 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2018-11-21 14:01:05,838 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2018-11-21 14:01:05,839 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:01:05,839 [DEBUG] yandextank.common.interfaces interfaces.py:82	Publishing status: Plugin/eta: 0
+2018-11-21 14:01:05,839 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:01:05,840 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:01:05,840 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:01:05,842 [DEBUG] yandextank.plugins.Console.screen screen.py:390	Terminal size: 139x25
+2018-11-21 14:01:05,842 [DEBUG] yandextank.plugins.Console.screen screen.py:402	Left/right panels width: 91/43
+2018-11-21 14:01:05,843 [DEBUG] yandextank.plugins.Console.screen screen.py:407	There are 3 info widgets
+2018-11-21 14:01:05,844 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #0: <yandextank.plugins.Phantom.widget.PhantomProgressBarWidget object at 0x7facc53aba90>
+2018-11-21 14:01:05,844 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #2: <yandextank.plugins.Phantom.widget.PhantomInfoWidget object at 0x7facc53ab390>
+2018-11-21 14:01:05,844 [DEBUG] yandextank.plugins.Console.screen screen.py:411	Rendering info widget #25: <yandextank.plugins.Autostop.plugin.AutostopWidget object at 0x7facc53ab750>
+2018-11-21 14:01:05,844 [DEBUG] yandextank.plugins.Console.screen screen.py:367	Rendering left blocks
+2018-11-21 14:01:05,850 [DEBUG] yandextank.aggregator.aggregator aggregator.py:160	Aggregation time: 42.51ms
+2018-11-21 14:01:05,857 [DEBUG] yandextank.plugins.Console.screen screen.py:419	Composing final screen output
+2018-11-21 14:01:05,857 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:01:05,858 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:01:05,858 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2018-11-21 14:01:05,858 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:01:05,858 [DEBUG] yandextank.core.tankcore tankcore.py:277	Polling took 0.0197110176086
+2018-11-21 14:01:05,858 [DEBUG] yandextank.plugins.Console.plugin plugin.py:73	Writing console view to STDOUT
+2018-11-21 14:01:05,858 [DEBUG] yandextank.core.tankcore tankcore.py:278	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 5, "speed": "43 Krps"}, "Plugin": {"eta": 0}}
+2018-11-21 14:01:06,339 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1542808862]
+2018-11-21 14:01:06,340 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1542808863]
+2018-11-21 14:01:06,346 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:189	Processed ammo count: 71/
+2018-11-21 14:01:06,346 [DEBUG] yandextank.core.tankcore tankcore.py:271	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:01:06,347 [INFO] yandextank.plugins.Phantom.plugin plugin.py:157	Phantom done its work with exit code: 0
+2018-11-21 14:01:06,347 [INFO] yandextank.core.tankcore tankcore.py:286	Finishing test...
+2018-11-21 14:01:06,348 [INFO] yandextank.core.tankcore tankcore.py:288	Stopping load generator and aggregator
+2018-11-21 14:01:06,348 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:173	Seems phantom finished OK
+2018-11-21 14:01:06,871 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 17.72ms
+2018-11-21 14:01:06,923 [DEBUG] yandextank.aggregator.aggregator aggregator.py:160	Aggregation time: 34.42ms
+2018-11-21 14:01:07,965 [DEBUG] yandextank.aggregator.aggregator aggregator.py:160	Aggregation time: 33.87ms
+2018-11-21 14:01:07,996 [DEBUG] yandextank.aggregator.aggregator aggregator.py:160	Aggregation time: 28.20ms
+2018-11-21 14:01:08,006 [DEBUG] yandextank.aggregator.aggregator aggregator.py:160	Aggregation time: 8.11ms
+2018-11-21 14:01:08,006 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1542808863, 1542808864, 1542808865, 1542808866]
+2018-11-21 14:01:08,006 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1542808864]
+2018-11-21 14:01:08,007 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:189	Processed ammo count: 80/
+2018-11-21 14:01:08,009 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:189	Processed ammo count: 89/
+2018-11-21 14:01:08,010 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:189	Processed ammo count: 98/
+2018-11-21 14:01:08,011 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:189	Processed ammo count: 100/
+2018-11-21 14:01:08,011 [DEBUG] yandextank.core.tankcore tankcore.py:290	RC after: 0
+2018-11-21 14:01:08,011 [DEBUG] yandextank.core.tankcore tankcore.py:292	Finalize <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:01:08,011 [DEBUG] yandextank.core.tankcore tankcore.py:294	RC before: 0
+2018-11-21 14:01:08,011 [DEBUG] yandextank.core.tankcore tankcore.py:296	RC after: 0
+2018-11-21 14:01:08,011 [DEBUG] yandextank.core.tankcore tankcore.py:292	Finalize <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:01:08,011 [DEBUG] yandextank.core.tankcore tankcore.py:294	RC before: 0
+2018-11-21 14:01:08,011 [DEBUG] yandextank.core.tankcore tankcore.py:296	RC after: 0
+2018-11-21 14:01:08,011 [DEBUG] yandextank.core.tankcore tankcore.py:292	Finalize <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:01:08,011 [DEBUG] yandextank.core.tankcore tankcore.py:294	RC before: 0
+2018-11-21 14:01:08,011 [DEBUG] yandextank.core.tankcore tankcore.py:296	RC after: 0
+2018-11-21 14:01:08,011 [DEBUG] yandextank.core.tankcore tankcore.py:292	Finalize <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:01:08,011 [DEBUG] yandextank.core.tankcore tankcore.py:294	RC before: 0
+2018-11-21 14:01:08,012 [DEBUG] yandextank.core.tankcore tankcore.py:296	RC after: 0
+2018-11-21 14:01:08,012 [DEBUG] yandextank.core.tankcore tankcore.py:292	Finalize <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:01:08,012 [DEBUG] yandextank.core.tankcore tankcore.py:294	RC before: 0
+2018-11-21 14:01:08,012 [DEBUG] yandextank.core.tankcore tankcore.py:296	RC after: 0
+2018-11-21 14:01:08,012 [DEBUG] yandextank.core.tankcore tankcore.py:292	Finalize <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:01:08,012 [DEBUG] yandextank.core.tankcore tankcore.py:294	RC before: 0
+2018-11-21 14:01:08,012 [DEBUG] yandextank.core.tankcore tankcore.py:296	RC after: 0
+2018-11-21 14:01:08,012 [INFO] yandextank.core.tankcore tankcore.py:307	Post-processing test...
+2018-11-21 14:01:08,012 [DEBUG] yandextank.core.tankcore tankcore.py:310	Post-process <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:01:08,012 [DEBUG] yandextank.core.tankcore tankcore.py:312	RC before: 0
+2018-11-21 14:01:08,012 [DEBUG] yandextank.core.tankcore tankcore.py:314	RC after: 0
+2018-11-21 14:01:08,012 [DEBUG] yandextank.core.tankcore tankcore.py:310	Post-process <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:01:08,012 [DEBUG] yandextank.core.tankcore tankcore.py:312	RC before: 0
+2018-11-21 14:01:08,012 [DEBUG] yandextank.core.tankcore tankcore.py:314	RC after: 0
+2018-11-21 14:01:08,012 [DEBUG] yandextank.core.tankcore tankcore.py:310	Post-process <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:01:08,012 [DEBUG] yandextank.core.tankcore tankcore.py:312	RC before: 0
+2018-11-21 14:01:08,012 [DEBUG] yandextank.core.tankcore tankcore.py:314	RC after: 0
+2018-11-21 14:01:08,012 [DEBUG] yandextank.core.tankcore tankcore.py:310	Post-process <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:01:08,012 [DEBUG] yandextank.core.tankcore tankcore.py:312	RC before: 0
+2018-11-21 14:01:08,013 [DEBUG] yandextank.core.tankcore tankcore.py:314	RC after: 0
+2018-11-21 14:01:08,013 [DEBUG] yandextank.core.tankcore tankcore.py:310	Post-process <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:01:08,013 [DEBUG] yandextank.core.tankcore tankcore.py:312	RC before: 0
+2018-11-21 14:01:08,013 [DEBUG] yandextank.core.tankcore tankcore.py:314	RC after: 0
+2018-11-21 14:01:08,013 [DEBUG] yandextank.core.tankcore tankcore.py:310	Post-process <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:01:08,013 [DEBUG] yandextank.core.tankcore tankcore.py:312	RC before: 0
+2018-11-21 14:01:08,013 [DEBUG] yandextank.core.tankcore tankcore.py:314	RC after: 0
+2018-11-21 14:01:08,013 [DEBUG] yandextank.core.tankcore tankcore.py:310	Post-process <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:01:08,013 [DEBUG] yandextank.core.tankcore tankcore.py:312	RC before: 0
+2018-11-21 14:01:08,013 [DEBUG] yandextank.core.tankcore tankcore.py:314	RC after: 0
+2018-11-21 14:01:08,013 [DEBUG] yandextank.core.tankcore tankcore.py:342	Collecting artifacts
+2018-11-21 14:01:08,013 [INFO] yandextank.core.tankcore tankcore.py:343	Artifacts dir: /var/loadtest/logs/2018-11-21_14-00-45.0byg7X
+2018-11-21 14:01:08,013 [DEBUG] yandextank.core.tankcore tankcore.py:397	Collecting file: /var/loadtest/logs/phantom_stat_UhQ1F8.log to /var/loadtest/logs/2018-11-21_14-00-45.0byg7X/phantom_stat_UhQ1F8.log
+2018-11-21 14:01:08,013 [DEBUG] yandextank.core.tankcore tankcore.py:397	Collecting file: /var/loadtest/logs/phantom_8LdFWg.log to /var/loadtest/logs/2018-11-21_14-00-45.0byg7X/phantom_8LdFWg.log
+2018-11-21 14:01:08,013 [DEBUG] yandextank.core.tankcore tankcore.py:397	Collecting file: /var/loadtest/logs/phout_KIys_N.log to /var/loadtest/logs/2018-11-21_14-00-45.0byg7X/phout_KIys_N.log
+2018-11-21 14:01:08,014 [DEBUG] yandextank.core.tankcore tankcore.py:397	Collecting file: /var/loadtest/logs/phantom_stdout_stderr_HppCrs.log to /var/loadtest/logs/2018-11-21_14-00-45.0byg7X/phantom_stdout_stderr_HppCrs.log
+2018-11-21 14:01:08,014 [DEBUG] yandextank.core.tankcore tankcore.py:397	Collecting file: tank_errors.log to /var/loadtest/logs/2018-11-21_14-00-45.0byg7X/tank_errors.log
+2018-11-21 14:01:08,014 [DEBUG] yandextank.core.tankcore tankcore.py:397	Collecting file: /tmp/tmpy5WG6W_pre-validation-config.yaml to /var/loadtest/logs/2018-11-21_14-00-45.0byg7X/tmpy5WG6W_pre-validation-config.yaml
+2018-11-21 14:01:08,014 [DEBUG] yandextank.core.tankcore tankcore.py:397	Collecting file: /var/loadtest/logs/phantom_g5gq9X.conf to /var/loadtest/logs/2018-11-21_14-00-45.0byg7X/phantom_g5gq9X.conf
+2018-11-21 14:01:08,014 [DEBUG] yandextank.core.tankcore tankcore.py:397	Collecting file: /var/loadtest/logs/answ_dgXik8.log to /var/loadtest/logs/2018-11-21_14-00-45.0byg7X/answ_dgXik8.log
+2018-11-21 14:01:08,014 [DEBUG] yandextank.core.tankcore tankcore.py:397	Collecting file: tank.log to /var/loadtest/logs/2018-11-21_14-00-45.0byg7X/tank.log
+2018-11-21 14:01:08,014 [INFO] yandextank.core.tankcore tankcore.py:514	Close allocated resources...
+2018-11-21 14:01:08,015 [DEBUG] yandextank.core.tankcore tankcore.py:461	Releasing lock: /var/lock/lunapark_lBDOct.lock
+2018-11-21 14:01:08,015 [DEBUG] yandextank.core.tankcore tankcore.py:517	Close <yandextank.plugins.Phantom.plugin.Plugin object at 0x7facc5407dd0>
+2018-11-21 14:01:08,015 [DEBUG] yandextank.core.tankcore tankcore.py:517	Close <yandextank.plugins.Autostop.plugin.Plugin object at 0x7facc5354050>
+2018-11-21 14:01:08,015 [DEBUG] yandextank.core.tankcore tankcore.py:517	Close <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7facc5354090>
+2018-11-21 14:01:08,015 [DEBUG] yandextank.core.tankcore tankcore.py:517	Close <yandextank.plugins.Console.plugin.Plugin object at 0x7facc5354390>
+2018-11-21 14:01:08,015 [DEBUG] yandextank.core.tankcore tankcore.py:517	Close <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7facc56d7c10>
+2018-11-21 14:01:08,015 [DEBUG] yandextank.core.tankcore tankcore.py:517	Close <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7facc56d7dd0>
+2018-11-21 14:01:08,015 [DEBUG] yandextank.core.tankcore tankcore.py:517	Close <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7facc56d7f50>
+2018-11-21 14:01:08,015 [INFO] yandextank.core.consoleworker consoleworker.py:471	Done performing test with code 0

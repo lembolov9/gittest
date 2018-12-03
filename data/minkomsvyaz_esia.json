@@ -1,0 +1,144 @@
+{
+  "find-account": {
+    "lastName": "екр",
+    "firstName": "кер",
+    "middleName": "кер",
+    "mobile": "+7(111)1111111",
+    "snils": "411-321-218 99",
+    "doc": {
+      "type": "RF_PASSPORT",
+      "series": "1111",
+      "number": "111111"
+    }
+  },
+  "confirm-account": {
+    "lastName": "Тестов",
+    "firstName": "Тест",
+    "middleName": "Тестович",
+    "snils": "135-419-238 52",
+    "mobile": "+7(920)4021351",
+    "email": "test@test.ru",
+    "doc": {
+      "type": "RF_PASSPORT",
+      "series": "1111",
+      "number": "111111"
+    }
+  },
+  "delete-account": {
+    "doc": {
+      "type": "RF_PASSPORT",
+      "number": "111111",
+      "series": "1111",
+      "issueId": "111111",
+      "issuedBy": "123",
+      "issueDate": "01.10.2017",
+      "expiryDate": "01.10.2020"
+    },
+    "email": "",
+    "snils": "229-785-346 20",
+    "gender": "M",
+    "mobile": "+7(920)4021351",
+    "lastName": "Тестов",
+    "birthDate": "11.11.1988",
+    "firstName": "Тест",
+    "birthPlace": "Россия, Воронеж",
+    "middleName": "Тестович",
+    "citizenship": "RUS"
+  },
+  "recover-account": {
+    "doc": {
+      "type": "FRGN_PASS",
+      "number": "1111111",
+      "series": "11",
+      "issueId": "111111",
+      "issuedBy": "123",
+      "issueDate": "01.10.2017",
+      "expiryDate": "01.10.2020",
+      "latinLastName": "Ivanov",
+      "latinFirstName": "Ivan"
+    },
+    "mode": "email",
+    "email": "dfg@bk.ru",
+    "snils": "229-785-346 20",
+    "gender": "M",
+    "mobile": "+7(920)4021351",
+    "lastName": "Тестов",
+    "birthDate": "11.11.1988",
+    "firstName": "Тест",
+    "birthPlace": "Соликамск",
+    "middleName": "Тестович"
+  },
+  "register-by-simplified-account": {
+    "birthPlace": "RUS",
+    "oid": "123",
+    "rtrnCode": "133",
+    "addressRegistration": {
+      "type": "PLV",
+      "house": "86",
+      "zipCode": "111111",
+      "building": "e",
+      "addressStr": "Кемеровская Область, Таштагольский Район, Шерегеш Поселок городского типа"
+    },
+    "doc": {
+      "type": "FID_DOC",
+      "number": "1111111",
+      "issueDate": "01.10.2017"
+    },
+    "mode": "mobile",
+    "snils": "229-785-346 20",
+    "gender": "F",
+    "mobile": "+7(920)4021351",
+    "lastName": "Тестов",
+    "birthDate": "11.11.1988",
+    "firstName": "Тест",
+    "citizenship": "RUS"
+  },
+  "register-certificate": {
+    "ogrn": "1111111111111",
+    "orgINN": "1111111111",
+    "ownerType": "SYS",
+    "startDate": "01.11.2017",
+    "expiryDate": "31.10.2018",
+    "serialNumber": "77665544",
+    "issuerOrgName": "УД001"
+  },
+  "register-child-account": {
+    "oid": "1000354536",
+    "snils": "229-785-346 20",
+    "gender": "M",
+    "lastName": "Иванов",
+    "birthCert": {
+      "actNo": "12341",
+      "number": "222333",
+      "series": "VVI-ФФ",
+      "issuedBy": "выдан",
+      "issuedDate": "05.03.2012",
+      "parentCount": "2"
+    },
+    "birthDate": "11.11.1988",
+    "firstName": "Иван",
+    "personInn": "554867861887",
+    "middleName": "Иванович",
+    "medicalInsurancePolicy": {
+      "number": "B2",
+      "expiryDate": "30.11.2034"
+    }
+  },
+  "register-account": {
+    "mode": "mobile",
+    "lastName": "Тестов",
+    "firstName": "Тест",
+    "snils": "135-419-238 52",
+    "gender": "M",
+    "birthDate": "19.09.2014",
+    "mobile": "+7(920)4021351",
+    "doc": {
+      "type": "RF_PASSPORT",
+      "series": "1111",
+      "number": "111111",
+      "issueId": "111111",
+      "issueDate": "19.09.2014"
+    },
+    "citizenship": "RUS"
+  }
+}

@@ -1,0 +1,23 @@
+android: {enabled: false, package: yandextank.plugins.Android}
+autostop: {enabled: true, package: yandextank.plugins.Autostop}
+bfg: {enabled: false, package: yandextank.plugins.Bfg}
+console: {enabled: true, package: yandextank.plugins.Console}
+core: {}
+influx: {enabled: false, package: yandextank.plugins.Influx}
+jmeter: {enabled: false, package: JMeter}
+json_report: {enabled: true, package: yandextank.plugins.JsonReport}
+overload: {enabled: false, job_dsc: test description, job_name: test, package: yandextank.plugins.DataUploader,
+  token_file: token.txt}
+phantom:
+  address: 127.0.0.1:8000
+  ammo_type: phantom
+  ammofile: result.txt
+  enabled: true
+  load_profile: {load_type: rps, schedule: 'step(1, 9, 2, 4)'}
+  package: yandextank.plugins.Phantom
+  use_caching: false
+  writelog: all
+rcassert: {enabled: true, package: yandextank.plugins.RCAssert}
+rcheck: {enabled: true, package: yandextank.plugins.ResourceCheck}
+shellexec: {enabled: true, package: yandextank.plugins.ShellExec}
+telegraf: {enabled: false, package: yandextank.plugins.Telegraf}

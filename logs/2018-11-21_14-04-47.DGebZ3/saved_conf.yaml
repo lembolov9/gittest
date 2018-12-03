@@ -1,0 +1,102 @@
+android: {enabled: false, package: yandextank.plugins.Android}
+autostop:
+  autostop: []
+  enabled: true
+  package: yandextank.plugins.Autostop
+  report_file: autostop_report.txt
+bfg: {enabled: false, package: yandextank.plugins.Bfg}
+console: {cases_max_spark: 120, cases_sort_by: count, disable_all_colors: false, disable_colors: '',
+  enabled: true, info_panel_width: 33, max_case_len: 32, package: yandextank.plugins.Console,
+  short_only: false, sizes_max_spark: 120, times_max_spark: 120}
+core: {affinity: '', artifacts_base_dir: ./logs, artifacts_dir: null, cmdline: /usr/local/bin/yandex-tank
+    result.txt, lock_dir: /var/lock/, message: '', pid: 1, taskset_path: taskset,
+  uuid: 6e9063c8-5e03-485f-af3c-8a677bb52531}
+influx: {enabled: false, package: yandextank.plugins.Influx}
+jmeter: {enabled: false, package: JMeter}
+json_report: {enabled: true, monitoring_log: monitoring.log, package: yandextank.plugins.JsonReport,
+  test_data_log: test_data.log}
+overload:
+  api_address: https://overload.yandex.net/
+  api_attempts: 60
+  api_timeout: 10
+  chunk_size: 500000
+  component: ''
+  connection_timeout: 30
+  enabled: true
+  ignore_target_lock: false
+  job_dsc: test description
+  job_name: test
+  jobno_file: jobno_file.txt
+  lock_targets: auto
+  log_data_requests: false
+  log_monitoring_requests: false
+  log_other_requests: false
+  log_status_requests: false
+  maintenance_attempts: 10
+  maintenance_timeout: 60
+  meta: {ammo_path: '/var/loadtest/result.txt ', cmdline: /usr/local/bin/yandex-tank
+      result.txt, jobno: 138271, loop_count: 5, target_host: 127.0.0.1, target_port: 8000}
+  network_attempts: 60
+  network_timeout: 10
+  notify: []
+  operator: null
+  package: yandextank.plugins.DataUploader
+  send_status_period: 10
+  strict_lock: false
+  target_lock_duration: 30m
+  task: ''
+  threads_timeout: 60
+  token_file: token.txt
+  ver: ''
+  writer_endpoint: ''
+phantom:
+  additional_libs: []
+  address: 127.0.0.1:8000
+  affinity: ''
+  ammo_limit: -1
+  ammo_type: phantom
+  ammofile: result.txt
+  autocases: 0
+  buffered_seconds: 2
+  cache_dir: null
+  chosen_cases: ''
+  client_certificate: ''
+  client_cipher_suites: ''
+  client_key: ''
+  config: ''
+  connection_test: true
+  enabled: true
+  enum_ammo: false
+  file_cache: 8192
+  force_stepping: 0
+  gatling_ip: ''
+  header_http: '1.0'
+  headers: []
+  instances: 1000
+  load_profile: {load_type: rps, schedule: 'step(1, 9, 2, 4)'}
+  loop: -1
+  method_options: ''
+  method_prefix: method_stream
+  multi: []
+  package: yandextank.plugins.Phantom
+  phantom_http_entity: 8M
+  phantom_http_field: 8K
+  phantom_http_field_num: 128
+  phantom_http_line: 1K
+  phantom_modules_path: /usr/lib/phantom
+  phantom_path: phantom
+  phout_file: ''
+  port: ''
+  source_log_prefix: ''
+  ssl: false
+  tank_type: http
+  threads: null
+  timeout: 11s
+  uris: []
+  use_caching: false
+  writelog: all
+rcassert: {enabled: true, fail_code: 10, package: yandextank.plugins.RCAssert, pass: ''}
+rcheck: {disk_limit: 2048, enabled: true, interval: 10s, mem_limit: 512, package: yandextank.plugins.ResourceCheck}
+shellexec: {catch_out: false, enabled: true, end: '', package: yandextank.plugins.ShellExec,
+  poll: '', post_process: '', prepare: '', start: ''}
+telegraf: {enabled: false, package: yandextank.plugins.Telegraf}

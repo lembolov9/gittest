@@ -1,0 +1,1100 @@
+1289 0 minkomsvyaz.user_order.previous-conviction-status-post
+POST /api/service/minkomsvyaz/user_order/previous-conviction-status HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 1116
+
+{'person': {'lastName': 'Фамилия', 'firstName': 'Имя', 'secondName': 'Отчество', 'snils': '111-111-111 45', 'phone': '+7 (912) 123-22-11', 'bdate': '19.09.2014', 'passport': {'series': '22 33', 'number': '112233', 'issueCode': '123-123', 'issueDate': '29.09.2008'}}, 'draft': {'fieldUpload': 'file.png;dGVzdCBmaWxlIGNvbnRlbnQ=', 'isPlaseAddress': False, 'addressRegistration': {'value': '630010, обл. Новосибирская, г. Новосибирск, пер. Воронежский, д. 2', 'post_index': '630010', 'regionKladr': '5400000000000', 'region': 'Новосибирская'}, 'addressHome': {'value': '630010, обл. Новосибирская, г. Новосибирск, пер. Воронежский, д. 2', 'post_index': '630010', 'regionKladr': '5400000000000', 'region': 'Новосибирская'}, 'fieldCheckbox2': True, 'lastFIO': [{'lastFamilyName': 'Фамилия'}, {'lastFamilyName': 'Имя'}, {'lastPatronymic': 'афв', 'lastFamilyName': 'Имя', 'lastFirstName': 'афв'}], 'fieldCheckbox4': True, 'lastRegion': ['023'], 'destinationAddress': '001'}}
+
+
+315 1000 roskazna.gmp.export-payments-post
+POST /api/service/roskazna/gmp/export-payments HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 164
+
+{'Paging': {'pageNumber': 1, 'pageLength': 100}, 'PaymentsExportConditions': {'kind': 'PAYMENT', 'ChargesConditions': {'SupplierBillID': ['32117072411021588933']}}}
+
+
+464 2000 minkomsvyaz.esia.register-account-post
+POST /api/service/minkomsvyaz/esia/register-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 308
+
+{'mode': 'mobile', 'lastName': 'Тестов', 'firstName': 'Тест', 'snils': '135-419-238 52', 'gender': 'M', 'birthDate': '19.09.2014', 'mobile': '+7(920)4021351', 'doc': {'type': 'RF_PASSPORT', 'series': '1111', 'number': '111111', 'issueId': '111111', 'issueDate': '19.09.2014'}, 'citizenship': 'RUS'}
+
+
+584 3000 minkomsvyaz.esia.delete-account-post
+POST /api/service/minkomsvyaz/esia/delete-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 430
+
+{'doc': {'type': 'RF_PASSPORT', 'number': '111111', 'series': '1111', 'issueId': '111111', 'issuedBy': '123', 'issueDate': '01.10.2017', 'expiryDate': '01.10.2020'}, 'email': '', 'snils': '229-785-346 20', 'gender': 'M', 'mobile': '+7(920)4021351', 'lastName': 'Тестов', 'birthDate': '11.11.1988', 'firstName': 'Тест', 'birthPlace': 'Россия, Воронеж', 'middleName': 'Тестович', 'citizenship': 'RUS'}
+
+
+318 4000 roskazna.gmp.export-charges-post
+POST /api/service/roskazna/gmp/export-charges HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 168
+
+{'Paging': {'pageNumber': 1, 'pageLength': 100}, 'ChargesExportConditions': {'kind': 'CHARGESTATUS', 'ChargesConditions': {'SupplierBillID': ['32117072411021588933']}}}
+
+
+629 4333 minkomsvyaz.esia.recover-account-post
+POST /api/service/minkomsvyaz/esia/recover-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 474
+
+{'doc': {'type': 'FRGN_PASS', 'number': '1111111', 'series': '11', 'issueId': '111111', 'issuedBy': '123', 'issueDate': '01.10.2017', 'expiryDate': '01.10.2020', 'latinLastName': 'Ivanov', 'latinFirstName': 'Ivan'}, 'mode': 'email', 'email': 'dfg@bk.ru', 'snils': '229-785-346 20', 'gender': 'M', 'mobile': '+7(920)4021351', 'lastName': 'Тестов', 'birthDate': '11.11.1988', 'firstName': 'Тест', 'birthPlace': 'Соликамск', 'middleName': 'Тестович'}
+
+
+589 4666 minkomsvyaz.esia.register-child-account-post
+POST /api/service/minkomsvyaz/esia/register-child-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 427
+
+{'oid': '1000354536', 'snils': '229-785-346 20', 'gender': 'M', 'lastName': 'Иванов', 'birthCert': {'actNo': '12341', 'number': '222333', 'series': 'VVI-ФФ', 'issuedBy': 'выдан', 'issuedDate': '05.03.2012', 'parentCount': '2'}, 'birthDate': '11.11.1988', 'firstName': 'Иван', 'personInn': '554867861887', 'middleName': 'Иванович', 'medicalInsurancePolicy': {'number': 'B2', 'expiryDate': '30.11.2034'}}
+
+
+340 5000 minkomsvyaz.esia.register-certificate-post
+POST /api/service/minkomsvyaz/esia/register-certificate HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 180
+
+{'ogrn': '1111111111111', 'orgINN': '1111111111', 'ownerType': 'SYS', 'startDate': '01.11.2017', 'expiryDate': '31.10.2018', 'serialNumber': '77665544', 'issuerOrgName': 'УД001'}
+
+
+980 5333 roskazna.gmp.import-payments-post
+POST /api/service/roskazna/gmp/import-payments HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 829
+
+{'PaymentsPackage': {'ImportedPayment': [{'paymentId': '10471020010005232407201700000001', 'purpose': 'Штраф', 'kbk': '18811630020016000140', 'oktmo': '45348000', 'supplierBillID': '18817072416285972102', 'amount': 50000, 'paymentDate': '2017-11-24', 'transKind': '01', 'Payer': {'name': 'Антонов Борис Константинович', 'payerIdentifier': '1010000000003751379232'}, 'Payee': {'name': 'УВД по ЦАО ГУ МВД России по г. Москве', 'inn': '7706012716', 'kpp': '770901011', 'OrgAccount': {'accountNumber': '40101810800000010041', 'Bank': {'bik': '044583001'}}}, 'BudgetIndex': {'status': '01', 'paytReason': '0', 'taxPeriod': '0', 'taxDocNumber': '01', 'taxDocDate': '0'}, 'receiptDate': '2017-11-24', 'AccDoc': {'accDocDate': '2017-11-24'}, 'ChangeStatus': {'meaning': '1'}}]}}
+
+
+444 5666 minkomsvyaz.user_order.pension-status-post
+POST /api/service/minkomsvyaz/user_order/pension-status HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 284
+
+{'person': {'lastName': 'Фамилия', 'firstName': 'Имя', 'secondName': 'Отчество', 'snils': '111-111-111 45', 'phone': '+7 (912) 123-22-11', 'bdate': '19.09.2014', 'passport': {'series': '22 33', 'number': '112233', 'issueCode': '123-123', 'issueDate': '29.09.2008'}}}
+
+
+392 6000 minkomsvyaz.esia.confirm-account-post
+POST /api/service/minkomsvyaz/esia/confirm-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 237
+
+{'lastName': 'Тестов', 'firstName': 'Тест', 'middleName': 'Тестович', 'snils': '135-419-238 52', 'mobile': '+7(920)4021351', 'email': 'test@test.ru', 'doc': {'type': 'RF_PASSPORT', 'series': '1111', 'number': '111111'}}
+
+
+738 6333 minkomsvyaz.esia.register-by-simplified-account-post
+POST /api/service/minkomsvyaz/esia/register-by-simplified-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 568
+
+{'birthPlace': 'RUS', 'oid': '123', 'rtrnCode': '133', 'addressRegistration': {'type': 'PLV', 'house': '86', 'zipCode': '111111', 'building': 'e', 'addressStr': 'Кемеровская Область, Таштагольский Район, Шерегеш Поселок городского типа'}, 'doc': {'type': 'FID_DOC', 'number': '1111111', 'issueDate': '01.10.2017'}, 'mode': 'mobile', 'snils': '229-785-346 20', 'gender': 'F', 'mobile': '+7(920)4021351', 'lastName': 'Тестов', 'birthDate': '11.11.1988', 'firstName': 'Тест', 'citizenship': 'RUS'}
+
+
+321 6666 roskazna.gmp.export-quittances-post
+POST /api/service/roskazna/gmp/export-quittances HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 168
+
+{'Paging': {'pageNumber': 1, 'pageLength': 100}, 'QuittancesExportConditions': {'kind': 'QUITTANCE', 'ChargesConditions': {'SupplierBillID': ['32117072411021588933']}}}
+
+
+877 7000 rtk.ebs.register-biometric-data-post
+POST /api/service/rtk/ebs/register-biometric-data HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 723
+
+{'BiometricData': [{'Id': 'd1b1520c-c2e9-11e8-a355-529269fb1459', 'Date': '2018-09-28T06:33:26.360094+00:00', 'PersonId': '1000363612', 'Data': [{'Modality': 'PHOTO', 'attachment': 'photo.png;dGVzdCBmaWxlIGNvbnRlbnQ='}, {'Modality': 'SOUND', 'BioMetadata': [{'Key': 'voice_1_start', 'Value': '0.000'}, {'Key': 'voice_1_end', 'Value': '6.037'}, {'Key': 'voice_1_desc', 'Value': 'digits_asc'}, {'Key': 'voice_2_start', 'Value': '6.037'}, {'Key': 'voice_2_end', 'Value': '12.167'}, {'Key': 'voice_2_desc', 'Value': 'digits_desc'}, {'Key': 'voice_3_start', 'Value': '12.167'}, {'Key': 'voice_3_end', 'Value': '18.297'}, {'Key': 'voice_3_desc', 'Value': 'digits_random'}], 'attachment': 'photo.wav;dGVzdCBmaWxlIGNvbnRlbnQ='}]}]}
+
+
+1526 7333 minkomsvyaz.user_order.change-pension-fund-post
+POST /api/service/minkomsvyaz/user_order/change-pension-fund HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 1360
+
+{'person': {'lastName': 'Фамилия', 'firstName': 'Имя', 'secondName': 'Отчество', 'snils': '111-111-111 45', 'phone': '+7 (912) 123-22-11', 'bdate': '19.09.2014', 'passport': {'series': '22 33', 'number': '112233', 'issueCode': '123-123', 'issueDate': '29.09.2008'}}, 'draft': {'isAnotherCountry': False, 'birthPlaceULCountryText': 'США', 'birthPlaceUL_ForeignPlace': 'впвап', 'birthCity': 'Сургут', 'birthArea': 'Сургутский', 'birthRegion': 'ХантыМансийский автономный округ', 'birthPlaceULCountry': {'value': 'RUS', 'text_value': 'РФ'}, 'copyFias': 3, 'temporaryResidence1': {'post_index': '465456', 'elmCode': '45000000000', 'region': 'Ханты-Мансийский', 'regionType': 'г.', 'area': 'Внуковское', 'areaType': 'р-н.', 'city': 'Москва', 'cityType': 'г.', 'place': 'Москва', 'street': 'Андропова', 'streetType': 'пр-кт.', 'house': '1', 'building1': 'а', 'building2': 'р', 'apartment': 'р', 'houseType': 'д.'}, 'phone': '+7(965)0960664', 'chooseOkato': 3, 'firmName2': 'Публичное акционерное общество «Сбербанк России»', 'payNumber': '99999999999999999999', 'nameDPT_2_code': '046001', 'nameDPT': 'УПФР по Аннинскому району Воронежской области'}}
+
+
+346 7666 minkomsvyaz.esia.find-account-post
+POST /api/service/minkomsvyaz/esia/find-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 194
+
+{'lastName': 'екр', 'firstName': 'кер', 'middleName': 'кер', 'mobile': '+7(111)1111111', 'snils': '411-321-218 99', 'doc': {'type': 'RF_PASSPORT', 'series': '1111', 'number': '111111'}}
+
+
+2351 8000 minkomsvyaz.user_order.set-pension-post
+POST /api/service/minkomsvyaz/user_order/set-pension HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 2193
+
+{'person': {'lastName': 'Горковенко', 'firstName': 'Дмитрий', 'secondName': 'Константинович', 'snils': '111-111-111 45', 'phone': '+7 (965) 096-06-64', 'bdate': '10.07.1992', 'passport': {'series': '76 12', 'number': '637666', 'issueCode': '750-002', 'issueDate': '16.07.2012'}}, 'draft': {'gender': 'F', 'Citizenship_Claimer_Second': 'RUS', 'is_CountryText': False, 'CountryText': 'США', 'PlaceBirth_Claimer_Rus': 'Белорусси яматьвашу', 'Country_Claimer_Birth': {'value': 'RUS', 'text_value': 'РФ'}, 'RegionName_Claimer_Birth': 'Москва', 'SettlementName_Claimer_Birth': 'Москва', 'PermanentResidence': {'post_index': '465456', 'elmCode': '45000000000', 'region': 'Москва', 'regionType': 'г.', 'area': 'Внуковское', 'areaType': 'р-н.', 'city': 'Москва', 'cityType': 'г.', 'place': 'Москва', 'street': 'Андропова', 'streetType': 'пр-кт.', 'house': 'а', 'houseType': 'д.', 'building1': '1', 'building2': '2', 'apartment': '3'}, 'TemporaryResidence': {'post_index': '465456', 'elmCode': '45000000000', 'region': 'Москва', 'regionType': 'г.', 'area': 'Внуковское', 'areaType': 'р-н.', 'city': 'Москва', 'cityType': 'г.', 'place': 'Москва', 'street': 'Андропова', 'streetType': 'пр-кт.', 'house': '6', 'houseType': 'д.', 'building1': '1', 'building2': '2', 'apartment': '3'}, 'tCopyFias': 2, 'aCopyFias': 1, 'jobClimer': '1', 'PanelPensionKind_Granting': 10, 'OtherChoice': True, 'Pension_Granting': ' об учете нестрахового периода вместо периода работы', 'Pension_FSD_Recalculate': True, 'Dependents_Claimer_Status': 1, 'Dependents_Claimer_Count': 30, 'Foreign_Recipient_Now': 0, 'Foreign__Now_NameState': 'РОССИЯ', 'Foreign_Recipient_Last': 0, 'Foreign_Last_NameState': 'ФРАНЦИЯ', 'Military_Recipient_Now': 0, 'Military_NameDPT_Now': 'МВД', 'Military_Recipient_Last': 0, 'Military_NameDPT_Last': 'МВД', 'FieldRadio_female': 0, 'chooseOkato': 1, 'NameDPT_2_code': '046001', 'NameDPT': 'УПФР по Аннинскому району Воронежской области'}}
+
+
+1289 8200 minkomsvyaz.user_order.previous-conviction-status-post
+POST /api/service/minkomsvyaz/user_order/previous-conviction-status HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 1116
+
+{'person': {'lastName': 'Фамилия', 'firstName': 'Имя', 'secondName': 'Отчество', 'snils': '111-111-111 45', 'phone': '+7 (912) 123-22-11', 'bdate': '19.09.2014', 'passport': {'series': '22 33', 'number': '112233', 'issueCode': '123-123', 'issueDate': '29.09.2008'}}, 'draft': {'fieldUpload': 'file.png;dGVzdCBmaWxlIGNvbnRlbnQ=', 'isPlaseAddress': False, 'addressRegistration': {'value': '630010, обл. Новосибирская, г. Новосибирск, пер. Воронежский, д. 2', 'post_index': '630010', 'regionKladr': '5400000000000', 'region': 'Новосибирская'}, 'addressHome': {'value': '630010, обл. Новосибирская, г. Новосибирск, пер. Воронежский, д. 2', 'post_index': '630010', 'regionKladr': '5400000000000', 'region': 'Новосибирская'}, 'fieldCheckbox2': True, 'lastFIO': [{'lastFamilyName': 'Фамилия'}, {'lastFamilyName': 'Имя'}, {'lastPatronymic': 'афв', 'lastFamilyName': 'Имя', 'lastFirstName': 'афв'}], 'fieldCheckbox4': True, 'lastRegion': ['023'], 'destinationAddress': '001'}}
+
+
+315 8400 roskazna.gmp.export-payments-post
+POST /api/service/roskazna/gmp/export-payments HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 164
+
+{'Paging': {'pageNumber': 1, 'pageLength': 100}, 'PaymentsExportConditions': {'kind': 'PAYMENT', 'ChargesConditions': {'SupplierBillID': ['32117072411021588933']}}}
+
+
+464 8600 minkomsvyaz.esia.register-account-post
+POST /api/service/minkomsvyaz/esia/register-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 308
+
+{'mode': 'mobile', 'lastName': 'Тестов', 'firstName': 'Тест', 'snils': '135-419-238 52', 'gender': 'M', 'birthDate': '19.09.2014', 'mobile': '+7(920)4021351', 'doc': {'type': 'RF_PASSPORT', 'series': '1111', 'number': '111111', 'issueId': '111111', 'issueDate': '19.09.2014'}, 'citizenship': 'RUS'}
+
+
+584 8800 minkomsvyaz.esia.delete-account-post
+POST /api/service/minkomsvyaz/esia/delete-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 430
+
+{'doc': {'type': 'RF_PASSPORT', 'number': '111111', 'series': '1111', 'issueId': '111111', 'issuedBy': '123', 'issueDate': '01.10.2017', 'expiryDate': '01.10.2020'}, 'email': '', 'snils': '229-785-346 20', 'gender': 'M', 'mobile': '+7(920)4021351', 'lastName': 'Тестов', 'birthDate': '11.11.1988', 'firstName': 'Тест', 'birthPlace': 'Россия, Воронеж', 'middleName': 'Тестович', 'citizenship': 'RUS'}
+
+
+318 9000 roskazna.gmp.export-charges-post
+POST /api/service/roskazna/gmp/export-charges HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 168
+
+{'Paging': {'pageNumber': 1, 'pageLength': 100}, 'ChargesExportConditions': {'kind': 'CHARGESTATUS', 'ChargesConditions': {'SupplierBillID': ['32117072411021588933']}}}
+
+
+629 9200 minkomsvyaz.esia.recover-account-post
+POST /api/service/minkomsvyaz/esia/recover-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 474
+
+{'doc': {'type': 'FRGN_PASS', 'number': '1111111', 'series': '11', 'issueId': '111111', 'issuedBy': '123', 'issueDate': '01.10.2017', 'expiryDate': '01.10.2020', 'latinLastName': 'Ivanov', 'latinFirstName': 'Ivan'}, 'mode': 'email', 'email': 'dfg@bk.ru', 'snils': '229-785-346 20', 'gender': 'M', 'mobile': '+7(920)4021351', 'lastName': 'Тестов', 'birthDate': '11.11.1988', 'firstName': 'Тест', 'birthPlace': 'Соликамск', 'middleName': 'Тестович'}
+
+
+589 9400 minkomsvyaz.esia.register-child-account-post
+POST /api/service/minkomsvyaz/esia/register-child-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 427
+
+{'oid': '1000354536', 'snils': '229-785-346 20', 'gender': 'M', 'lastName': 'Иванов', 'birthCert': {'actNo': '12341', 'number': '222333', 'series': 'VVI-ФФ', 'issuedBy': 'выдан', 'issuedDate': '05.03.2012', 'parentCount': '2'}, 'birthDate': '11.11.1988', 'firstName': 'Иван', 'personInn': '554867861887', 'middleName': 'Иванович', 'medicalInsurancePolicy': {'number': 'B2', 'expiryDate': '30.11.2034'}}
+
+
+340 9600 minkomsvyaz.esia.register-certificate-post
+POST /api/service/minkomsvyaz/esia/register-certificate HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 180
+
+{'ogrn': '1111111111111', 'orgINN': '1111111111', 'ownerType': 'SYS', 'startDate': '01.11.2017', 'expiryDate': '31.10.2018', 'serialNumber': '77665544', 'issuerOrgName': 'УД001'}
+
+
+980 9800 roskazna.gmp.import-payments-post
+POST /api/service/roskazna/gmp/import-payments HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 829
+
+{'PaymentsPackage': {'ImportedPayment': [{'paymentId': '10471020010005232407201700000001', 'purpose': 'Штраф', 'kbk': '18811630020016000140', 'oktmo': '45348000', 'supplierBillID': '18817072416285972102', 'amount': 50000, 'paymentDate': '2017-11-24', 'transKind': '01', 'Payer': {'name': 'Антонов Борис Константинович', 'payerIdentifier': '1010000000003751379232'}, 'Payee': {'name': 'УВД по ЦАО ГУ МВД России по г. Москве', 'inn': '7706012716', 'kpp': '770901011', 'OrgAccount': {'accountNumber': '40101810800000010041', 'Bank': {'bik': '044583001'}}}, 'BudgetIndex': {'status': '01', 'paytReason': '0', 'taxPeriod': '0', 'taxDocNumber': '01', 'taxDocDate': '0'}, 'receiptDate': '2017-11-24', 'AccDoc': {'accDocDate': '2017-11-24'}, 'ChangeStatus': {'meaning': '1'}}]}}
+
+
+444 10000 minkomsvyaz.user_order.pension-status-post
+POST /api/service/minkomsvyaz/user_order/pension-status HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 284
+
+{'person': {'lastName': 'Фамилия', 'firstName': 'Имя', 'secondName': 'Отчество', 'snils': '111-111-111 45', 'phone': '+7 (912) 123-22-11', 'bdate': '19.09.2014', 'passport': {'series': '22 33', 'number': '112233', 'issueCode': '123-123', 'issueDate': '29.09.2008'}}}
+
+
+392 10200 minkomsvyaz.esia.confirm-account-post
+POST /api/service/minkomsvyaz/esia/confirm-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 237
+
+{'lastName': 'Тестов', 'firstName': 'Тест', 'middleName': 'Тестович', 'snils': '135-419-238 52', 'mobile': '+7(920)4021351', 'email': 'test@test.ru', 'doc': {'type': 'RF_PASSPORT', 'series': '1111', 'number': '111111'}}
+
+
+738 10400 minkomsvyaz.esia.register-by-simplified-account-post
+POST /api/service/minkomsvyaz/esia/register-by-simplified-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 568
+
+{'birthPlace': 'RUS', 'oid': '123', 'rtrnCode': '133', 'addressRegistration': {'type': 'PLV', 'house': '86', 'zipCode': '111111', 'building': 'e', 'addressStr': 'Кемеровская Область, Таштагольский Район, Шерегеш Поселок городского типа'}, 'doc': {'type': 'FID_DOC', 'number': '1111111', 'issueDate': '01.10.2017'}, 'mode': 'mobile', 'snils': '229-785-346 20', 'gender': 'F', 'mobile': '+7(920)4021351', 'lastName': 'Тестов', 'birthDate': '11.11.1988', 'firstName': 'Тест', 'citizenship': 'RUS'}
+
+
+321 10600 roskazna.gmp.export-quittances-post
+POST /api/service/roskazna/gmp/export-quittances HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 168
+
+{'Paging': {'pageNumber': 1, 'pageLength': 100}, 'QuittancesExportConditions': {'kind': 'QUITTANCE', 'ChargesConditions': {'SupplierBillID': ['32117072411021588933']}}}
+
+
+877 10800 rtk.ebs.register-biometric-data-post
+POST /api/service/rtk/ebs/register-biometric-data HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 723
+
+{'BiometricData': [{'Id': 'd1b1520c-c2e9-11e8-a355-529269fb1459', 'Date': '2018-09-28T06:33:26.360094+00:00', 'PersonId': '1000363612', 'Data': [{'Modality': 'PHOTO', 'attachment': 'photo.png;dGVzdCBmaWxlIGNvbnRlbnQ='}, {'Modality': 'SOUND', 'BioMetadata': [{'Key': 'voice_1_start', 'Value': '0.000'}, {'Key': 'voice_1_end', 'Value': '6.037'}, {'Key': 'voice_1_desc', 'Value': 'digits_asc'}, {'Key': 'voice_2_start', 'Value': '6.037'}, {'Key': 'voice_2_end', 'Value': '12.167'}, {'Key': 'voice_2_desc', 'Value': 'digits_desc'}, {'Key': 'voice_3_start', 'Value': '12.167'}, {'Key': 'voice_3_end', 'Value': '18.297'}, {'Key': 'voice_3_desc', 'Value': 'digits_random'}], 'attachment': 'photo.wav;dGVzdCBmaWxlIGNvbnRlbnQ='}]}]}
+
+
+1526 11000 minkomsvyaz.user_order.change-pension-fund-post
+POST /api/service/minkomsvyaz/user_order/change-pension-fund HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 1360
+
+{'person': {'lastName': 'Фамилия', 'firstName': 'Имя', 'secondName': 'Отчество', 'snils': '111-111-111 45', 'phone': '+7 (912) 123-22-11', 'bdate': '19.09.2014', 'passport': {'series': '22 33', 'number': '112233', 'issueCode': '123-123', 'issueDate': '29.09.2008'}}, 'draft': {'isAnotherCountry': False, 'birthPlaceULCountryText': 'США', 'birthPlaceUL_ForeignPlace': 'впвап', 'birthCity': 'Сургут', 'birthArea': 'Сургутский', 'birthRegion': 'ХантыМансийский автономный округ', 'birthPlaceULCountry': {'value': 'RUS', 'text_value': 'РФ'}, 'copyFias': 3, 'temporaryResidence1': {'post_index': '465456', 'elmCode': '45000000000', 'region': 'Ханты-Мансийский', 'regionType': 'г.', 'area': 'Внуковское', 'areaType': 'р-н.', 'city': 'Москва', 'cityType': 'г.', 'place': 'Москва', 'street': 'Андропова', 'streetType': 'пр-кт.', 'house': '1', 'building1': 'а', 'building2': 'р', 'apartment': 'р', 'houseType': 'д.'}, 'phone': '+7(965)0960664', 'chooseOkato': 3, 'firmName2': 'Публичное акционерное общество «Сбербанк России»', 'payNumber': '99999999999999999999', 'nameDPT_2_code': '046001', 'nameDPT': 'УПФР по Аннинскому району Воронежской области'}}
+
+
+346 11200 minkomsvyaz.esia.find-account-post
+POST /api/service/minkomsvyaz/esia/find-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 194
+
+{'lastName': 'екр', 'firstName': 'кер', 'middleName': 'кер', 'mobile': '+7(111)1111111', 'snils': '411-321-218 99', 'doc': {'type': 'RF_PASSPORT', 'series': '1111', 'number': '111111'}}
+
+
+2351 11400 minkomsvyaz.user_order.set-pension-post
+POST /api/service/minkomsvyaz/user_order/set-pension HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 2193
+
+{'person': {'lastName': 'Горковенко', 'firstName': 'Дмитрий', 'secondName': 'Константинович', 'snils': '111-111-111 45', 'phone': '+7 (965) 096-06-64', 'bdate': '10.07.1992', 'passport': {'series': '76 12', 'number': '637666', 'issueCode': '750-002', 'issueDate': '16.07.2012'}}, 'draft': {'gender': 'F', 'Citizenship_Claimer_Second': 'RUS', 'is_CountryText': False, 'CountryText': 'США', 'PlaceBirth_Claimer_Rus': 'Белорусси яматьвашу', 'Country_Claimer_Birth': {'value': 'RUS', 'text_value': 'РФ'}, 'RegionName_Claimer_Birth': 'Москва', 'SettlementName_Claimer_Birth': 'Москва', 'PermanentResidence': {'post_index': '465456', 'elmCode': '45000000000', 'region': 'Москва', 'regionType': 'г.', 'area': 'Внуковское', 'areaType': 'р-н.', 'city': 'Москва', 'cityType': 'г.', 'place': 'Москва', 'street': 'Андропова', 'streetType': 'пр-кт.', 'house': 'а', 'houseType': 'д.', 'building1': '1', 'building2': '2', 'apartment': '3'}, 'TemporaryResidence': {'post_index': '465456', 'elmCode': '45000000000', 'region': 'Москва', 'regionType': 'г.', 'area': 'Внуковское', 'areaType': 'р-н.', 'city': 'Москва', 'cityType': 'г.', 'place': 'Москва', 'street': 'Андропова', 'streetType': 'пр-кт.', 'house': '6', 'houseType': 'д.', 'building1': '1', 'building2': '2', 'apartment': '3'}, 'tCopyFias': 2, 'aCopyFias': 1, 'jobClimer': '1', 'PanelPensionKind_Granting': 10, 'OtherChoice': True, 'Pension_Granting': ' об учете нестрахового периода вместо периода работы', 'Pension_FSD_Recalculate': True, 'Dependents_Claimer_Status': 1, 'Dependents_Claimer_Count': 30, 'Foreign_Recipient_Now': 0, 'Foreign__Now_NameState': 'РОССИЯ', 'Foreign_Recipient_Last': 0, 'Foreign_Last_NameState': 'ФРАНЦИЯ', 'Military_Recipient_Now': 0, 'Military_NameDPT_Now': 'МВД', 'Military_Recipient_Last': 0, 'Military_NameDPT_Last': 'МВД', 'FieldRadio_female': 0, 'chooseOkato': 1, 'NameDPT_2_code': '046001', 'NameDPT': 'УПФР по Аннинскому району Воронежской области'}}
+
+
+1289 11600 minkomsvyaz.user_order.previous-conviction-status-post
+POST /api/service/minkomsvyaz/user_order/previous-conviction-status HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 1116
+
+{'person': {'lastName': 'Фамилия', 'firstName': 'Имя', 'secondName': 'Отчество', 'snils': '111-111-111 45', 'phone': '+7 (912) 123-22-11', 'bdate': '19.09.2014', 'passport': {'series': '22 33', 'number': '112233', 'issueCode': '123-123', 'issueDate': '29.09.2008'}}, 'draft': {'fieldUpload': 'file.png;dGVzdCBmaWxlIGNvbnRlbnQ=', 'isPlaseAddress': False, 'addressRegistration': {'value': '630010, обл. Новосибирская, г. Новосибирск, пер. Воронежский, д. 2', 'post_index': '630010', 'regionKladr': '5400000000000', 'region': 'Новосибирская'}, 'addressHome': {'value': '630010, обл. Новосибирская, г. Новосибирск, пер. Воронежский, д. 2', 'post_index': '630010', 'regionKladr': '5400000000000', 'region': 'Новосибирская'}, 'fieldCheckbox2': True, 'lastFIO': [{'lastFamilyName': 'Фамилия'}, {'lastFamilyName': 'Имя'}, {'lastPatronymic': 'афв', 'lastFamilyName': 'Имя', 'lastFirstName': 'афв'}], 'fieldCheckbox4': True, 'lastRegion': ['023'], 'destinationAddress': '001'}}
+
+
+315 11800 roskazna.gmp.export-payments-post
+POST /api/service/roskazna/gmp/export-payments HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 164
+
+{'Paging': {'pageNumber': 1, 'pageLength': 100}, 'PaymentsExportConditions': {'kind': 'PAYMENT', 'ChargesConditions': {'SupplierBillID': ['32117072411021588933']}}}
+
+
+464 12000 minkomsvyaz.esia.register-account-post
+POST /api/service/minkomsvyaz/esia/register-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 308
+
+{'mode': 'mobile', 'lastName': 'Тестов', 'firstName': 'Тест', 'snils': '135-419-238 52', 'gender': 'M', 'birthDate': '19.09.2014', 'mobile': '+7(920)4021351', 'doc': {'type': 'RF_PASSPORT', 'series': '1111', 'number': '111111', 'issueId': '111111', 'issueDate': '19.09.2014'}, 'citizenship': 'RUS'}
+
+
+584 12142 minkomsvyaz.esia.delete-account-post
+POST /api/service/minkomsvyaz/esia/delete-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 430
+
+{'doc': {'type': 'RF_PASSPORT', 'number': '111111', 'series': '1111', 'issueId': '111111', 'issuedBy': '123', 'issueDate': '01.10.2017', 'expiryDate': '01.10.2020'}, 'email': '', 'snils': '229-785-346 20', 'gender': 'M', 'mobile': '+7(920)4021351', 'lastName': 'Тестов', 'birthDate': '11.11.1988', 'firstName': 'Тест', 'birthPlace': 'Россия, Воронеж', 'middleName': 'Тестович', 'citizenship': 'RUS'}
+
+
+318 12285 roskazna.gmp.export-charges-post
+POST /api/service/roskazna/gmp/export-charges HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 168
+
+{'Paging': {'pageNumber': 1, 'pageLength': 100}, 'ChargesExportConditions': {'kind': 'CHARGESTATUS', 'ChargesConditions': {'SupplierBillID': ['32117072411021588933']}}}
+
+
+629 12428 minkomsvyaz.esia.recover-account-post
+POST /api/service/minkomsvyaz/esia/recover-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 474
+
+{'doc': {'type': 'FRGN_PASS', 'number': '1111111', 'series': '11', 'issueId': '111111', 'issuedBy': '123', 'issueDate': '01.10.2017', 'expiryDate': '01.10.2020', 'latinLastName': 'Ivanov', 'latinFirstName': 'Ivan'}, 'mode': 'email', 'email': 'dfg@bk.ru', 'snils': '229-785-346 20', 'gender': 'M', 'mobile': '+7(920)4021351', 'lastName': 'Тестов', 'birthDate': '11.11.1988', 'firstName': 'Тест', 'birthPlace': 'Соликамск', 'middleName': 'Тестович'}
+
+
+589 12571 minkomsvyaz.esia.register-child-account-post
+POST /api/service/minkomsvyaz/esia/register-child-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 427
+
+{'oid': '1000354536', 'snils': '229-785-346 20', 'gender': 'M', 'lastName': 'Иванов', 'birthCert': {'actNo': '12341', 'number': '222333', 'series': 'VVI-ФФ', 'issuedBy': 'выдан', 'issuedDate': '05.03.2012', 'parentCount': '2'}, 'birthDate': '11.11.1988', 'firstName': 'Иван', 'personInn': '554867861887', 'middleName': 'Иванович', 'medicalInsurancePolicy': {'number': 'B2', 'expiryDate': '30.11.2034'}}
+
+
+340 12714 minkomsvyaz.esia.register-certificate-post
+POST /api/service/minkomsvyaz/esia/register-certificate HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 180
+
+{'ogrn': '1111111111111', 'orgINN': '1111111111', 'ownerType': 'SYS', 'startDate': '01.11.2017', 'expiryDate': '31.10.2018', 'serialNumber': '77665544', 'issuerOrgName': 'УД001'}
+
+
+980 12857 roskazna.gmp.import-payments-post
+POST /api/service/roskazna/gmp/import-payments HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 829
+
+{'PaymentsPackage': {'ImportedPayment': [{'paymentId': '10471020010005232407201700000001', 'purpose': 'Штраф', 'kbk': '18811630020016000140', 'oktmo': '45348000', 'supplierBillID': '18817072416285972102', 'amount': 50000, 'paymentDate': '2017-11-24', 'transKind': '01', 'Payer': {'name': 'Антонов Борис Константинович', 'payerIdentifier': '1010000000003751379232'}, 'Payee': {'name': 'УВД по ЦАО ГУ МВД России по г. Москве', 'inn': '7706012716', 'kpp': '770901011', 'OrgAccount': {'accountNumber': '40101810800000010041', 'Bank': {'bik': '044583001'}}}, 'BudgetIndex': {'status': '01', 'paytReason': '0', 'taxPeriod': '0', 'taxDocNumber': '01', 'taxDocDate': '0'}, 'receiptDate': '2017-11-24', 'AccDoc': {'accDocDate': '2017-11-24'}, 'ChangeStatus': {'meaning': '1'}}]}}
+
+
+444 13000 minkomsvyaz.user_order.pension-status-post
+POST /api/service/minkomsvyaz/user_order/pension-status HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 284
+
+{'person': {'lastName': 'Фамилия', 'firstName': 'Имя', 'secondName': 'Отчество', 'snils': '111-111-111 45', 'phone': '+7 (912) 123-22-11', 'bdate': '19.09.2014', 'passport': {'series': '22 33', 'number': '112233', 'issueCode': '123-123', 'issueDate': '29.09.2008'}}}
+
+
+392 13142 minkomsvyaz.esia.confirm-account-post
+POST /api/service/minkomsvyaz/esia/confirm-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 237
+
+{'lastName': 'Тестов', 'firstName': 'Тест', 'middleName': 'Тестович', 'snils': '135-419-238 52', 'mobile': '+7(920)4021351', 'email': 'test@test.ru', 'doc': {'type': 'RF_PASSPORT', 'series': '1111', 'number': '111111'}}
+
+
+738 13285 minkomsvyaz.esia.register-by-simplified-account-post
+POST /api/service/minkomsvyaz/esia/register-by-simplified-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 568
+
+{'birthPlace': 'RUS', 'oid': '123', 'rtrnCode': '133', 'addressRegistration': {'type': 'PLV', 'house': '86', 'zipCode': '111111', 'building': 'e', 'addressStr': 'Кемеровская Область, Таштагольский Район, Шерегеш Поселок городского типа'}, 'doc': {'type': 'FID_DOC', 'number': '1111111', 'issueDate': '01.10.2017'}, 'mode': 'mobile', 'snils': '229-785-346 20', 'gender': 'F', 'mobile': '+7(920)4021351', 'lastName': 'Тестов', 'birthDate': '11.11.1988', 'firstName': 'Тест', 'citizenship': 'RUS'}
+
+
+321 13428 roskazna.gmp.export-quittances-post
+POST /api/service/roskazna/gmp/export-quittances HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 168
+
+{'Paging': {'pageNumber': 1, 'pageLength': 100}, 'QuittancesExportConditions': {'kind': 'QUITTANCE', 'ChargesConditions': {'SupplierBillID': ['32117072411021588933']}}}
+
+
+877 13571 rtk.ebs.register-biometric-data-post
+POST /api/service/rtk/ebs/register-biometric-data HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 723
+
+{'BiometricData': [{'Id': 'd1b1520c-c2e9-11e8-a355-529269fb1459', 'Date': '2018-09-28T06:33:26.360094+00:00', 'PersonId': '1000363612', 'Data': [{'Modality': 'PHOTO', 'attachment': 'photo.png;dGVzdCBmaWxlIGNvbnRlbnQ='}, {'Modality': 'SOUND', 'BioMetadata': [{'Key': 'voice_1_start', 'Value': '0.000'}, {'Key': 'voice_1_end', 'Value': '6.037'}, {'Key': 'voice_1_desc', 'Value': 'digits_asc'}, {'Key': 'voice_2_start', 'Value': '6.037'}, {'Key': 'voice_2_end', 'Value': '12.167'}, {'Key': 'voice_2_desc', 'Value': 'digits_desc'}, {'Key': 'voice_3_start', 'Value': '12.167'}, {'Key': 'voice_3_end', 'Value': '18.297'}, {'Key': 'voice_3_desc', 'Value': 'digits_random'}], 'attachment': 'photo.wav;dGVzdCBmaWxlIGNvbnRlbnQ='}]}]}
+
+
+1526 13714 minkomsvyaz.user_order.change-pension-fund-post
+POST /api/service/minkomsvyaz/user_order/change-pension-fund HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 1360
+
+{'person': {'lastName': 'Фамилия', 'firstName': 'Имя', 'secondName': 'Отчество', 'snils': '111-111-111 45', 'phone': '+7 (912) 123-22-11', 'bdate': '19.09.2014', 'passport': {'series': '22 33', 'number': '112233', 'issueCode': '123-123', 'issueDate': '29.09.2008'}}, 'draft': {'isAnotherCountry': False, 'birthPlaceULCountryText': 'США', 'birthPlaceUL_ForeignPlace': 'впвап', 'birthCity': 'Сургут', 'birthArea': 'Сургутский', 'birthRegion': 'ХантыМансийский автономный округ', 'birthPlaceULCountry': {'value': 'RUS', 'text_value': 'РФ'}, 'copyFias': 3, 'temporaryResidence1': {'post_index': '465456', 'elmCode': '45000000000', 'region': 'Ханты-Мансийский', 'regionType': 'г.', 'area': 'Внуковское', 'areaType': 'р-н.', 'city': 'Москва', 'cityType': 'г.', 'place': 'Москва', 'street': 'Андропова', 'streetType': 'пр-кт.', 'house': '1', 'building1': 'а', 'building2': 'р', 'apartment': 'р', 'houseType': 'д.'}, 'phone': '+7(965)0960664', 'chooseOkato': 3, 'firmName2': 'Публичное акционерное общество «Сбербанк России»', 'payNumber': '99999999999999999999', 'nameDPT_2_code': '046001', 'nameDPT': 'УПФР по Аннинскому району Воронежской области'}}
+
+
+346 13857 minkomsvyaz.esia.find-account-post
+POST /api/service/minkomsvyaz/esia/find-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 194
+
+{'lastName': 'екр', 'firstName': 'кер', 'middleName': 'кер', 'mobile': '+7(111)1111111', 'snils': '411-321-218 99', 'doc': {'type': 'RF_PASSPORT', 'series': '1111', 'number': '111111'}}
+
+
+2351 14000 minkomsvyaz.user_order.set-pension-post
+POST /api/service/minkomsvyaz/user_order/set-pension HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 2193
+
+{'person': {'lastName': 'Горковенко', 'firstName': 'Дмитрий', 'secondName': 'Константинович', 'snils': '111-111-111 45', 'phone': '+7 (965) 096-06-64', 'bdate': '10.07.1992', 'passport': {'series': '76 12', 'number': '637666', 'issueCode': '750-002', 'issueDate': '16.07.2012'}}, 'draft': {'gender': 'F', 'Citizenship_Claimer_Second': 'RUS', 'is_CountryText': False, 'CountryText': 'США', 'PlaceBirth_Claimer_Rus': 'Белорусси яматьвашу', 'Country_Claimer_Birth': {'value': 'RUS', 'text_value': 'РФ'}, 'RegionName_Claimer_Birth': 'Москва', 'SettlementName_Claimer_Birth': 'Москва', 'PermanentResidence': {'post_index': '465456', 'elmCode': '45000000000', 'region': 'Москва', 'regionType': 'г.', 'area': 'Внуковское', 'areaType': 'р-н.', 'city': 'Москва', 'cityType': 'г.', 'place': 'Москва', 'street': 'Андропова', 'streetType': 'пр-кт.', 'house': 'а', 'houseType': 'д.', 'building1': '1', 'building2': '2', 'apartment': '3'}, 'TemporaryResidence': {'post_index': '465456', 'elmCode': '45000000000', 'region': 'Москва', 'regionType': 'г.', 'area': 'Внуковское', 'areaType': 'р-н.', 'city': 'Москва', 'cityType': 'г.', 'place': 'Москва', 'street': 'Андропова', 'streetType': 'пр-кт.', 'house': '6', 'houseType': 'д.', 'building1': '1', 'building2': '2', 'apartment': '3'}, 'tCopyFias': 2, 'aCopyFias': 1, 'jobClimer': '1', 'PanelPensionKind_Granting': 10, 'OtherChoice': True, 'Pension_Granting': ' об учете нестрахового периода вместо периода работы', 'Pension_FSD_Recalculate': True, 'Dependents_Claimer_Status': 1, 'Dependents_Claimer_Count': 30, 'Foreign_Recipient_Now': 0, 'Foreign__Now_NameState': 'РОССИЯ', 'Foreign_Recipient_Last': 0, 'Foreign_Last_NameState': 'ФРАНЦИЯ', 'Military_Recipient_Now': 0, 'Military_NameDPT_Now': 'МВД', 'Military_Recipient_Last': 0, 'Military_NameDPT_Last': 'МВД', 'FieldRadio_female': 0, 'chooseOkato': 1, 'NameDPT_2_code': '046001', 'NameDPT': 'УПФР по Аннинскому району Воронежской области'}}
+
+
+1289 14142 minkomsvyaz.user_order.previous-conviction-status-post
+POST /api/service/minkomsvyaz/user_order/previous-conviction-status HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 1116
+
+{'person': {'lastName': 'Фамилия', 'firstName': 'Имя', 'secondName': 'Отчество', 'snils': '111-111-111 45', 'phone': '+7 (912) 123-22-11', 'bdate': '19.09.2014', 'passport': {'series': '22 33', 'number': '112233', 'issueCode': '123-123', 'issueDate': '29.09.2008'}}, 'draft': {'fieldUpload': 'file.png;dGVzdCBmaWxlIGNvbnRlbnQ=', 'isPlaseAddress': False, 'addressRegistration': {'value': '630010, обл. Новосибирская, г. Новосибирск, пер. Воронежский, д. 2', 'post_index': '630010', 'regionKladr': '5400000000000', 'region': 'Новосибирская'}, 'addressHome': {'value': '630010, обл. Новосибирская, г. Новосибирск, пер. Воронежский, д. 2', 'post_index': '630010', 'regionKladr': '5400000000000', 'region': 'Новосибирская'}, 'fieldCheckbox2': True, 'lastFIO': [{'lastFamilyName': 'Фамилия'}, {'lastFamilyName': 'Имя'}, {'lastPatronymic': 'афв', 'lastFamilyName': 'Имя', 'lastFirstName': 'афв'}], 'fieldCheckbox4': True, 'lastRegion': ['023'], 'destinationAddress': '001'}}
+
+
+315 14285 roskazna.gmp.export-payments-post
+POST /api/service/roskazna/gmp/export-payments HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 164
+
+{'Paging': {'pageNumber': 1, 'pageLength': 100}, 'PaymentsExportConditions': {'kind': 'PAYMENT', 'ChargesConditions': {'SupplierBillID': ['32117072411021588933']}}}
+
+
+464 14428 minkomsvyaz.esia.register-account-post
+POST /api/service/minkomsvyaz/esia/register-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 308
+
+{'mode': 'mobile', 'lastName': 'Тестов', 'firstName': 'Тест', 'snils': '135-419-238 52', 'gender': 'M', 'birthDate': '19.09.2014', 'mobile': '+7(920)4021351', 'doc': {'type': 'RF_PASSPORT', 'series': '1111', 'number': '111111', 'issueId': '111111', 'issueDate': '19.09.2014'}, 'citizenship': 'RUS'}
+
+
+584 14571 minkomsvyaz.esia.delete-account-post
+POST /api/service/minkomsvyaz/esia/delete-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 430
+
+{'doc': {'type': 'RF_PASSPORT', 'number': '111111', 'series': '1111', 'issueId': '111111', 'issuedBy': '123', 'issueDate': '01.10.2017', 'expiryDate': '01.10.2020'}, 'email': '', 'snils': '229-785-346 20', 'gender': 'M', 'mobile': '+7(920)4021351', 'lastName': 'Тестов', 'birthDate': '11.11.1988', 'firstName': 'Тест', 'birthPlace': 'Россия, Воронеж', 'middleName': 'Тестович', 'citizenship': 'RUS'}
+
+
+318 14714 roskazna.gmp.export-charges-post
+POST /api/service/roskazna/gmp/export-charges HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 168
+
+{'Paging': {'pageNumber': 1, 'pageLength': 100}, 'ChargesExportConditions': {'kind': 'CHARGESTATUS', 'ChargesConditions': {'SupplierBillID': ['32117072411021588933']}}}
+
+
+629 14857 minkomsvyaz.esia.recover-account-post
+POST /api/service/minkomsvyaz/esia/recover-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 474
+
+{'doc': {'type': 'FRGN_PASS', 'number': '1111111', 'series': '11', 'issueId': '111111', 'issuedBy': '123', 'issueDate': '01.10.2017', 'expiryDate': '01.10.2020', 'latinLastName': 'Ivanov', 'latinFirstName': 'Ivan'}, 'mode': 'email', 'email': 'dfg@bk.ru', 'snils': '229-785-346 20', 'gender': 'M', 'mobile': '+7(920)4021351', 'lastName': 'Тестов', 'birthDate': '11.11.1988', 'firstName': 'Тест', 'birthPlace': 'Соликамск', 'middleName': 'Тестович'}
+
+
+589 15000 minkomsvyaz.esia.register-child-account-post
+POST /api/service/minkomsvyaz/esia/register-child-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 427
+
+{'oid': '1000354536', 'snils': '229-785-346 20', 'gender': 'M', 'lastName': 'Иванов', 'birthCert': {'actNo': '12341', 'number': '222333', 'series': 'VVI-ФФ', 'issuedBy': 'выдан', 'issuedDate': '05.03.2012', 'parentCount': '2'}, 'birthDate': '11.11.1988', 'firstName': 'Иван', 'personInn': '554867861887', 'middleName': 'Иванович', 'medicalInsurancePolicy': {'number': 'B2', 'expiryDate': '30.11.2034'}}
+
+
+340 15142 minkomsvyaz.esia.register-certificate-post
+POST /api/service/minkomsvyaz/esia/register-certificate HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 180
+
+{'ogrn': '1111111111111', 'orgINN': '1111111111', 'ownerType': 'SYS', 'startDate': '01.11.2017', 'expiryDate': '31.10.2018', 'serialNumber': '77665544', 'issuerOrgName': 'УД001'}
+
+
+980 15285 roskazna.gmp.import-payments-post
+POST /api/service/roskazna/gmp/import-payments HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 829
+
+{'PaymentsPackage': {'ImportedPayment': [{'paymentId': '10471020010005232407201700000001', 'purpose': 'Штраф', 'kbk': '18811630020016000140', 'oktmo': '45348000', 'supplierBillID': '18817072416285972102', 'amount': 50000, 'paymentDate': '2017-11-24', 'transKind': '01', 'Payer': {'name': 'Антонов Борис Константинович', 'payerIdentifier': '1010000000003751379232'}, 'Payee': {'name': 'УВД по ЦАО ГУ МВД России по г. Москве', 'inn': '7706012716', 'kpp': '770901011', 'OrgAccount': {'accountNumber': '40101810800000010041', 'Bank': {'bik': '044583001'}}}, 'BudgetIndex': {'status': '01', 'paytReason': '0', 'taxPeriod': '0', 'taxDocNumber': '01', 'taxDocDate': '0'}, 'receiptDate': '2017-11-24', 'AccDoc': {'accDocDate': '2017-11-24'}, 'ChangeStatus': {'meaning': '1'}}]}}
+
+
+444 15428 minkomsvyaz.user_order.pension-status-post
+POST /api/service/minkomsvyaz/user_order/pension-status HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 284
+
+{'person': {'lastName': 'Фамилия', 'firstName': 'Имя', 'secondName': 'Отчество', 'snils': '111-111-111 45', 'phone': '+7 (912) 123-22-11', 'bdate': '19.09.2014', 'passport': {'series': '22 33', 'number': '112233', 'issueCode': '123-123', 'issueDate': '29.09.2008'}}}
+
+
+392 15571 minkomsvyaz.esia.confirm-account-post
+POST /api/service/minkomsvyaz/esia/confirm-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 237
+
+{'lastName': 'Тестов', 'firstName': 'Тест', 'middleName': 'Тестович', 'snils': '135-419-238 52', 'mobile': '+7(920)4021351', 'email': 'test@test.ru', 'doc': {'type': 'RF_PASSPORT', 'series': '1111', 'number': '111111'}}
+
+
+738 15714 minkomsvyaz.esia.register-by-simplified-account-post
+POST /api/service/minkomsvyaz/esia/register-by-simplified-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 568
+
+{'birthPlace': 'RUS', 'oid': '123', 'rtrnCode': '133', 'addressRegistration': {'type': 'PLV', 'house': '86', 'zipCode': '111111', 'building': 'e', 'addressStr': 'Кемеровская Область, Таштагольский Район, Шерегеш Поселок городского типа'}, 'doc': {'type': 'FID_DOC', 'number': '1111111', 'issueDate': '01.10.2017'}, 'mode': 'mobile', 'snils': '229-785-346 20', 'gender': 'F', 'mobile': '+7(920)4021351', 'lastName': 'Тестов', 'birthDate': '11.11.1988', 'firstName': 'Тест', 'citizenship': 'RUS'}
+
+
+321 15857 roskazna.gmp.export-quittances-post
+POST /api/service/roskazna/gmp/export-quittances HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 168
+
+{'Paging': {'pageNumber': 1, 'pageLength': 100}, 'QuittancesExportConditions': {'kind': 'QUITTANCE', 'ChargesConditions': {'SupplierBillID': ['32117072411021588933']}}}
+
+
+877 16000 rtk.ebs.register-biometric-data-post
+POST /api/service/rtk/ebs/register-biometric-data HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 723
+
+{'BiometricData': [{'Id': 'd1b1520c-c2e9-11e8-a355-529269fb1459', 'Date': '2018-09-28T06:33:26.360094+00:00', 'PersonId': '1000363612', 'Data': [{'Modality': 'PHOTO', 'attachment': 'photo.png;dGVzdCBmaWxlIGNvbnRlbnQ='}, {'Modality': 'SOUND', 'BioMetadata': [{'Key': 'voice_1_start', 'Value': '0.000'}, {'Key': 'voice_1_end', 'Value': '6.037'}, {'Key': 'voice_1_desc', 'Value': 'digits_asc'}, {'Key': 'voice_2_start', 'Value': '6.037'}, {'Key': 'voice_2_end', 'Value': '12.167'}, {'Key': 'voice_2_desc', 'Value': 'digits_desc'}, {'Key': 'voice_3_start', 'Value': '12.167'}, {'Key': 'voice_3_end', 'Value': '18.297'}, {'Key': 'voice_3_desc', 'Value': 'digits_random'}], 'attachment': 'photo.wav;dGVzdCBmaWxlIGNvbnRlbnQ='}]}]}
+
+
+1526 16111 minkomsvyaz.user_order.change-pension-fund-post
+POST /api/service/minkomsvyaz/user_order/change-pension-fund HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 1360
+
+{'person': {'lastName': 'Фамилия', 'firstName': 'Имя', 'secondName': 'Отчество', 'snils': '111-111-111 45', 'phone': '+7 (912) 123-22-11', 'bdate': '19.09.2014', 'passport': {'series': '22 33', 'number': '112233', 'issueCode': '123-123', 'issueDate': '29.09.2008'}}, 'draft': {'isAnotherCountry': False, 'birthPlaceULCountryText': 'США', 'birthPlaceUL_ForeignPlace': 'впвап', 'birthCity': 'Сургут', 'birthArea': 'Сургутский', 'birthRegion': 'ХантыМансийский автономный округ', 'birthPlaceULCountry': {'value': 'RUS', 'text_value': 'РФ'}, 'copyFias': 3, 'temporaryResidence1': {'post_index': '465456', 'elmCode': '45000000000', 'region': 'Ханты-Мансийский', 'regionType': 'г.', 'area': 'Внуковское', 'areaType': 'р-н.', 'city': 'Москва', 'cityType': 'г.', 'place': 'Москва', 'street': 'Андропова', 'streetType': 'пр-кт.', 'house': '1', 'building1': 'а', 'building2': 'р', 'apartment': 'р', 'houseType': 'д.'}, 'phone': '+7(965)0960664', 'chooseOkato': 3, 'firmName2': 'Публичное акционерное общество «Сбербанк России»', 'payNumber': '99999999999999999999', 'nameDPT_2_code': '046001', 'nameDPT': 'УПФР по Аннинскому району Воронежской области'}}
+
+
+346 16222 minkomsvyaz.esia.find-account-post
+POST /api/service/minkomsvyaz/esia/find-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 194
+
+{'lastName': 'екр', 'firstName': 'кер', 'middleName': 'кер', 'mobile': '+7(111)1111111', 'snils': '411-321-218 99', 'doc': {'type': 'RF_PASSPORT', 'series': '1111', 'number': '111111'}}
+
+
+2351 16333 minkomsvyaz.user_order.set-pension-post
+POST /api/service/minkomsvyaz/user_order/set-pension HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 2193
+
+{'person': {'lastName': 'Горковенко', 'firstName': 'Дмитрий', 'secondName': 'Константинович', 'snils': '111-111-111 45', 'phone': '+7 (965) 096-06-64', 'bdate': '10.07.1992', 'passport': {'series': '76 12', 'number': '637666', 'issueCode': '750-002', 'issueDate': '16.07.2012'}}, 'draft': {'gender': 'F', 'Citizenship_Claimer_Second': 'RUS', 'is_CountryText': False, 'CountryText': 'США', 'PlaceBirth_Claimer_Rus': 'Белорусси яматьвашу', 'Country_Claimer_Birth': {'value': 'RUS', 'text_value': 'РФ'}, 'RegionName_Claimer_Birth': 'Москва', 'SettlementName_Claimer_Birth': 'Москва', 'PermanentResidence': {'post_index': '465456', 'elmCode': '45000000000', 'region': 'Москва', 'regionType': 'г.', 'area': 'Внуковское', 'areaType': 'р-н.', 'city': 'Москва', 'cityType': 'г.', 'place': 'Москва', 'street': 'Андропова', 'streetType': 'пр-кт.', 'house': 'а', 'houseType': 'д.', 'building1': '1', 'building2': '2', 'apartment': '3'}, 'TemporaryResidence': {'post_index': '465456', 'elmCode': '45000000000', 'region': 'Москва', 'regionType': 'г.', 'area': 'Внуковское', 'areaType': 'р-н.', 'city': 'Москва', 'cityType': 'г.', 'place': 'Москва', 'street': 'Андропова', 'streetType': 'пр-кт.', 'house': '6', 'houseType': 'д.', 'building1': '1', 'building2': '2', 'apartment': '3'}, 'tCopyFias': 2, 'aCopyFias': 1, 'jobClimer': '1', 'PanelPensionKind_Granting': 10, 'OtherChoice': True, 'Pension_Granting': ' об учете нестрахового периода вместо периода работы', 'Pension_FSD_Recalculate': True, 'Dependents_Claimer_Status': 1, 'Dependents_Claimer_Count': 30, 'Foreign_Recipient_Now': 0, 'Foreign__Now_NameState': 'РОССИЯ', 'Foreign_Recipient_Last': 0, 'Foreign_Last_NameState': 'ФРАНЦИЯ', 'Military_Recipient_Now': 0, 'Military_NameDPT_Now': 'МВД', 'Military_Recipient_Last': 0, 'Military_NameDPT_Last': 'МВД', 'FieldRadio_female': 0, 'chooseOkato': 1, 'NameDPT_2_code': '046001', 'NameDPT': 'УПФР по Аннинскому району Воронежской области'}}
+
+
+1289 16444 minkomsvyaz.user_order.previous-conviction-status-post
+POST /api/service/minkomsvyaz/user_order/previous-conviction-status HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 1116
+
+{'person': {'lastName': 'Фамилия', 'firstName': 'Имя', 'secondName': 'Отчество', 'snils': '111-111-111 45', 'phone': '+7 (912) 123-22-11', 'bdate': '19.09.2014', 'passport': {'series': '22 33', 'number': '112233', 'issueCode': '123-123', 'issueDate': '29.09.2008'}}, 'draft': {'fieldUpload': 'file.png;dGVzdCBmaWxlIGNvbnRlbnQ=', 'isPlaseAddress': False, 'addressRegistration': {'value': '630010, обл. Новосибирская, г. Новосибирск, пер. Воронежский, д. 2', 'post_index': '630010', 'regionKladr': '5400000000000', 'region': 'Новосибирская'}, 'addressHome': {'value': '630010, обл. Новосибирская, г. Новосибирск, пер. Воронежский, д. 2', 'post_index': '630010', 'regionKladr': '5400000000000', 'region': 'Новосибирская'}, 'fieldCheckbox2': True, 'lastFIO': [{'lastFamilyName': 'Фамилия'}, {'lastFamilyName': 'Имя'}, {'lastPatronymic': 'афв', 'lastFamilyName': 'Имя', 'lastFirstName': 'афв'}], 'fieldCheckbox4': True, 'lastRegion': ['023'], 'destinationAddress': '001'}}
+
+
+315 16555 roskazna.gmp.export-payments-post
+POST /api/service/roskazna/gmp/export-payments HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 164
+
+{'Paging': {'pageNumber': 1, 'pageLength': 100}, 'PaymentsExportConditions': {'kind': 'PAYMENT', 'ChargesConditions': {'SupplierBillID': ['32117072411021588933']}}}
+
+
+464 16666 minkomsvyaz.esia.register-account-post
+POST /api/service/minkomsvyaz/esia/register-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 308
+
+{'mode': 'mobile', 'lastName': 'Тестов', 'firstName': 'Тест', 'snils': '135-419-238 52', 'gender': 'M', 'birthDate': '19.09.2014', 'mobile': '+7(920)4021351', 'doc': {'type': 'RF_PASSPORT', 'series': '1111', 'number': '111111', 'issueId': '111111', 'issueDate': '19.09.2014'}, 'citizenship': 'RUS'}
+
+
+584 16777 minkomsvyaz.esia.delete-account-post
+POST /api/service/minkomsvyaz/esia/delete-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 430
+
+{'doc': {'type': 'RF_PASSPORT', 'number': '111111', 'series': '1111', 'issueId': '111111', 'issuedBy': '123', 'issueDate': '01.10.2017', 'expiryDate': '01.10.2020'}, 'email': '', 'snils': '229-785-346 20', 'gender': 'M', 'mobile': '+7(920)4021351', 'lastName': 'Тестов', 'birthDate': '11.11.1988', 'firstName': 'Тест', 'birthPlace': 'Россия, Воронеж', 'middleName': 'Тестович', 'citizenship': 'RUS'}
+
+
+318 16888 roskazna.gmp.export-charges-post
+POST /api/service/roskazna/gmp/export-charges HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 168
+
+{'Paging': {'pageNumber': 1, 'pageLength': 100}, 'ChargesExportConditions': {'kind': 'CHARGESTATUS', 'ChargesConditions': {'SupplierBillID': ['32117072411021588933']}}}
+
+
+629 17000 minkomsvyaz.esia.recover-account-post
+POST /api/service/minkomsvyaz/esia/recover-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 474
+
+{'doc': {'type': 'FRGN_PASS', 'number': '1111111', 'series': '11', 'issueId': '111111', 'issuedBy': '123', 'issueDate': '01.10.2017', 'expiryDate': '01.10.2020', 'latinLastName': 'Ivanov', 'latinFirstName': 'Ivan'}, 'mode': 'email', 'email': 'dfg@bk.ru', 'snils': '229-785-346 20', 'gender': 'M', 'mobile': '+7(920)4021351', 'lastName': 'Тестов', 'birthDate': '11.11.1988', 'firstName': 'Тест', 'birthPlace': 'Соликамск', 'middleName': 'Тестович'}
+
+
+589 17111 minkomsvyaz.esia.register-child-account-post
+POST /api/service/minkomsvyaz/esia/register-child-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 427
+
+{'oid': '1000354536', 'snils': '229-785-346 20', 'gender': 'M', 'lastName': 'Иванов', 'birthCert': {'actNo': '12341', 'number': '222333', 'series': 'VVI-ФФ', 'issuedBy': 'выдан', 'issuedDate': '05.03.2012', 'parentCount': '2'}, 'birthDate': '11.11.1988', 'firstName': 'Иван', 'personInn': '554867861887', 'middleName': 'Иванович', 'medicalInsurancePolicy': {'number': 'B2', 'expiryDate': '30.11.2034'}}
+
+
+340 17222 minkomsvyaz.esia.register-certificate-post
+POST /api/service/minkomsvyaz/esia/register-certificate HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 180
+
+{'ogrn': '1111111111111', 'orgINN': '1111111111', 'ownerType': 'SYS', 'startDate': '01.11.2017', 'expiryDate': '31.10.2018', 'serialNumber': '77665544', 'issuerOrgName': 'УД001'}
+
+
+980 17333 roskazna.gmp.import-payments-post
+POST /api/service/roskazna/gmp/import-payments HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 829
+
+{'PaymentsPackage': {'ImportedPayment': [{'paymentId': '10471020010005232407201700000001', 'purpose': 'Штраф', 'kbk': '18811630020016000140', 'oktmo': '45348000', 'supplierBillID': '18817072416285972102', 'amount': 50000, 'paymentDate': '2017-11-24', 'transKind': '01', 'Payer': {'name': 'Антонов Борис Константинович', 'payerIdentifier': '1010000000003751379232'}, 'Payee': {'name': 'УВД по ЦАО ГУ МВД России по г. Москве', 'inn': '7706012716', 'kpp': '770901011', 'OrgAccount': {'accountNumber': '40101810800000010041', 'Bank': {'bik': '044583001'}}}, 'BudgetIndex': {'status': '01', 'paytReason': '0', 'taxPeriod': '0', 'taxDocNumber': '01', 'taxDocDate': '0'}, 'receiptDate': '2017-11-24', 'AccDoc': {'accDocDate': '2017-11-24'}, 'ChangeStatus': {'meaning': '1'}}]}}
+
+
+444 17444 minkomsvyaz.user_order.pension-status-post
+POST /api/service/minkomsvyaz/user_order/pension-status HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 284
+
+{'person': {'lastName': 'Фамилия', 'firstName': 'Имя', 'secondName': 'Отчество', 'snils': '111-111-111 45', 'phone': '+7 (912) 123-22-11', 'bdate': '19.09.2014', 'passport': {'series': '22 33', 'number': '112233', 'issueCode': '123-123', 'issueDate': '29.09.2008'}}}
+
+
+392 17555 minkomsvyaz.esia.confirm-account-post
+POST /api/service/minkomsvyaz/esia/confirm-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 237
+
+{'lastName': 'Тестов', 'firstName': 'Тест', 'middleName': 'Тестович', 'snils': '135-419-238 52', 'mobile': '+7(920)4021351', 'email': 'test@test.ru', 'doc': {'type': 'RF_PASSPORT', 'series': '1111', 'number': '111111'}}
+
+
+738 17666 minkomsvyaz.esia.register-by-simplified-account-post
+POST /api/service/minkomsvyaz/esia/register-by-simplified-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 568
+
+{'birthPlace': 'RUS', 'oid': '123', 'rtrnCode': '133', 'addressRegistration': {'type': 'PLV', 'house': '86', 'zipCode': '111111', 'building': 'e', 'addressStr': 'Кемеровская Область, Таштагольский Район, Шерегеш Поселок городского типа'}, 'doc': {'type': 'FID_DOC', 'number': '1111111', 'issueDate': '01.10.2017'}, 'mode': 'mobile', 'snils': '229-785-346 20', 'gender': 'F', 'mobile': '+7(920)4021351', 'lastName': 'Тестов', 'birthDate': '11.11.1988', 'firstName': 'Тест', 'citizenship': 'RUS'}
+
+
+321 17777 roskazna.gmp.export-quittances-post
+POST /api/service/roskazna/gmp/export-quittances HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 168
+
+{'Paging': {'pageNumber': 1, 'pageLength': 100}, 'QuittancesExportConditions': {'kind': 'QUITTANCE', 'ChargesConditions': {'SupplierBillID': ['32117072411021588933']}}}
+
+
+877 17888 rtk.ebs.register-biometric-data-post
+POST /api/service/rtk/ebs/register-biometric-data HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 723
+
+{'BiometricData': [{'Id': 'd1b1520c-c2e9-11e8-a355-529269fb1459', 'Date': '2018-09-28T06:33:26.360094+00:00', 'PersonId': '1000363612', 'Data': [{'Modality': 'PHOTO', 'attachment': 'photo.png;dGVzdCBmaWxlIGNvbnRlbnQ='}, {'Modality': 'SOUND', 'BioMetadata': [{'Key': 'voice_1_start', 'Value': '0.000'}, {'Key': 'voice_1_end', 'Value': '6.037'}, {'Key': 'voice_1_desc', 'Value': 'digits_asc'}, {'Key': 'voice_2_start', 'Value': '6.037'}, {'Key': 'voice_2_end', 'Value': '12.167'}, {'Key': 'voice_2_desc', 'Value': 'digits_desc'}, {'Key': 'voice_3_start', 'Value': '12.167'}, {'Key': 'voice_3_end', 'Value': '18.297'}, {'Key': 'voice_3_desc', 'Value': 'digits_random'}], 'attachment': 'photo.wav;dGVzdCBmaWxlIGNvbnRlbnQ='}]}]}
+
+
+1526 18000 minkomsvyaz.user_order.change-pension-fund-post
+POST /api/service/minkomsvyaz/user_order/change-pension-fund HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 1360
+
+{'person': {'lastName': 'Фамилия', 'firstName': 'Имя', 'secondName': 'Отчество', 'snils': '111-111-111 45', 'phone': '+7 (912) 123-22-11', 'bdate': '19.09.2014', 'passport': {'series': '22 33', 'number': '112233', 'issueCode': '123-123', 'issueDate': '29.09.2008'}}, 'draft': {'isAnotherCountry': False, 'birthPlaceULCountryText': 'США', 'birthPlaceUL_ForeignPlace': 'впвап', 'birthCity': 'Сургут', 'birthArea': 'Сургутский', 'birthRegion': 'ХантыМансийский автономный округ', 'birthPlaceULCountry': {'value': 'RUS', 'text_value': 'РФ'}, 'copyFias': 3, 'temporaryResidence1': {'post_index': '465456', 'elmCode': '45000000000', 'region': 'Ханты-Мансийский', 'regionType': 'г.', 'area': 'Внуковское', 'areaType': 'р-н.', 'city': 'Москва', 'cityType': 'г.', 'place': 'Москва', 'street': 'Андропова', 'streetType': 'пр-кт.', 'house': '1', 'building1': 'а', 'building2': 'р', 'apartment': 'р', 'houseType': 'д.'}, 'phone': '+7(965)0960664', 'chooseOkato': 3, 'firmName2': 'Публичное акционерное общество «Сбербанк России»', 'payNumber': '99999999999999999999', 'nameDPT_2_code': '046001', 'nameDPT': 'УПФР по Аннинскому району Воронежской области'}}
+
+
+346 18111 minkomsvyaz.esia.find-account-post
+POST /api/service/minkomsvyaz/esia/find-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 194
+
+{'lastName': 'екр', 'firstName': 'кер', 'middleName': 'кер', 'mobile': '+7(111)1111111', 'snils': '411-321-218 99', 'doc': {'type': 'RF_PASSPORT', 'series': '1111', 'number': '111111'}}
+
+
+2351 18222 minkomsvyaz.user_order.set-pension-post
+POST /api/service/minkomsvyaz/user_order/set-pension HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 2193
+
+{'person': {'lastName': 'Горковенко', 'firstName': 'Дмитрий', 'secondName': 'Константинович', 'snils': '111-111-111 45', 'phone': '+7 (965) 096-06-64', 'bdate': '10.07.1992', 'passport': {'series': '76 12', 'number': '637666', 'issueCode': '750-002', 'issueDate': '16.07.2012'}}, 'draft': {'gender': 'F', 'Citizenship_Claimer_Second': 'RUS', 'is_CountryText': False, 'CountryText': 'США', 'PlaceBirth_Claimer_Rus': 'Белорусси яматьвашу', 'Country_Claimer_Birth': {'value': 'RUS', 'text_value': 'РФ'}, 'RegionName_Claimer_Birth': 'Москва', 'SettlementName_Claimer_Birth': 'Москва', 'PermanentResidence': {'post_index': '465456', 'elmCode': '45000000000', 'region': 'Москва', 'regionType': 'г.', 'area': 'Внуковское', 'areaType': 'р-н.', 'city': 'Москва', 'cityType': 'г.', 'place': 'Москва', 'street': 'Андропова', 'streetType': 'пр-кт.', 'house': 'а', 'houseType': 'д.', 'building1': '1', 'building2': '2', 'apartment': '3'}, 'TemporaryResidence': {'post_index': '465456', 'elmCode': '45000000000', 'region': 'Москва', 'regionType': 'г.', 'area': 'Внуковское', 'areaType': 'р-н.', 'city': 'Москва', 'cityType': 'г.', 'place': 'Москва', 'street': 'Андропова', 'streetType': 'пр-кт.', 'house': '6', 'houseType': 'д.', 'building1': '1', 'building2': '2', 'apartment': '3'}, 'tCopyFias': 2, 'aCopyFias': 1, 'jobClimer': '1', 'PanelPensionKind_Granting': 10, 'OtherChoice': True, 'Pension_Granting': ' об учете нестрахового периода вместо периода работы', 'Pension_FSD_Recalculate': True, 'Dependents_Claimer_Status': 1, 'Dependents_Claimer_Count': 30, 'Foreign_Recipient_Now': 0, 'Foreign__Now_NameState': 'РОССИЯ', 'Foreign_Recipient_Last': 0, 'Foreign_Last_NameState': 'ФРАНЦИЯ', 'Military_Recipient_Now': 0, 'Military_NameDPT_Now': 'МВД', 'Military_Recipient_Last': 0, 'Military_NameDPT_Last': 'МВД', 'FieldRadio_female': 0, 'chooseOkato': 1, 'NameDPT_2_code': '046001', 'NameDPT': 'УПФР по Аннинскому району Воронежской области'}}
+
+
+1289 18333 minkomsvyaz.user_order.previous-conviction-status-post
+POST /api/service/minkomsvyaz/user_order/previous-conviction-status HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 1116
+
+{'person': {'lastName': 'Фамилия', 'firstName': 'Имя', 'secondName': 'Отчество', 'snils': '111-111-111 45', 'phone': '+7 (912) 123-22-11', 'bdate': '19.09.2014', 'passport': {'series': '22 33', 'number': '112233', 'issueCode': '123-123', 'issueDate': '29.09.2008'}}, 'draft': {'fieldUpload': 'file.png;dGVzdCBmaWxlIGNvbnRlbnQ=', 'isPlaseAddress': False, 'addressRegistration': {'value': '630010, обл. Новосибирская, г. Новосибирск, пер. Воронежский, д. 2', 'post_index': '630010', 'regionKladr': '5400000000000', 'region': 'Новосибирская'}, 'addressHome': {'value': '630010, обл. Новосибирская, г. Новосибирск, пер. Воронежский, д. 2', 'post_index': '630010', 'regionKladr': '5400000000000', 'region': 'Новосибирская'}, 'fieldCheckbox2': True, 'lastFIO': [{'lastFamilyName': 'Фамилия'}, {'lastFamilyName': 'Имя'}, {'lastPatronymic': 'афв', 'lastFamilyName': 'Имя', 'lastFirstName': 'афв'}], 'fieldCheckbox4': True, 'lastRegion': ['023'], 'destinationAddress': '001'}}
+
+
+315 18444 roskazna.gmp.export-payments-post
+POST /api/service/roskazna/gmp/export-payments HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 164
+
+{'Paging': {'pageNumber': 1, 'pageLength': 100}, 'PaymentsExportConditions': {'kind': 'PAYMENT', 'ChargesConditions': {'SupplierBillID': ['32117072411021588933']}}}
+
+
+464 18555 minkomsvyaz.esia.register-account-post
+POST /api/service/minkomsvyaz/esia/register-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 308
+
+{'mode': 'mobile', 'lastName': 'Тестов', 'firstName': 'Тест', 'snils': '135-419-238 52', 'gender': 'M', 'birthDate': '19.09.2014', 'mobile': '+7(920)4021351', 'doc': {'type': 'RF_PASSPORT', 'series': '1111', 'number': '111111', 'issueId': '111111', 'issueDate': '19.09.2014'}, 'citizenship': 'RUS'}
+
+
+584 18666 minkomsvyaz.esia.delete-account-post
+POST /api/service/minkomsvyaz/esia/delete-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 430
+
+{'doc': {'type': 'RF_PASSPORT', 'number': '111111', 'series': '1111', 'issueId': '111111', 'issuedBy': '123', 'issueDate': '01.10.2017', 'expiryDate': '01.10.2020'}, 'email': '', 'snils': '229-785-346 20', 'gender': 'M', 'mobile': '+7(920)4021351', 'lastName': 'Тестов', 'birthDate': '11.11.1988', 'firstName': 'Тест', 'birthPlace': 'Россия, Воронеж', 'middleName': 'Тестович', 'citizenship': 'RUS'}
+
+
+318 18777 roskazna.gmp.export-charges-post
+POST /api/service/roskazna/gmp/export-charges HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 168
+
+{'Paging': {'pageNumber': 1, 'pageLength': 100}, 'ChargesExportConditions': {'kind': 'CHARGESTATUS', 'ChargesConditions': {'SupplierBillID': ['32117072411021588933']}}}
+
+
+629 18888 minkomsvyaz.esia.recover-account-post
+POST /api/service/minkomsvyaz/esia/recover-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 474
+
+{'doc': {'type': 'FRGN_PASS', 'number': '1111111', 'series': '11', 'issueId': '111111', 'issuedBy': '123', 'issueDate': '01.10.2017', 'expiryDate': '01.10.2020', 'latinLastName': 'Ivanov', 'latinFirstName': 'Ivan'}, 'mode': 'email', 'email': 'dfg@bk.ru', 'snils': '229-785-346 20', 'gender': 'M', 'mobile': '+7(920)4021351', 'lastName': 'Тестов', 'birthDate': '11.11.1988', 'firstName': 'Тест', 'birthPlace': 'Соликамск', 'middleName': 'Тестович'}
+
+
+589 19000 minkomsvyaz.esia.register-child-account-post
+POST /api/service/minkomsvyaz/esia/register-child-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 427
+
+{'oid': '1000354536', 'snils': '229-785-346 20', 'gender': 'M', 'lastName': 'Иванов', 'birthCert': {'actNo': '12341', 'number': '222333', 'series': 'VVI-ФФ', 'issuedBy': 'выдан', 'issuedDate': '05.03.2012', 'parentCount': '2'}, 'birthDate': '11.11.1988', 'firstName': 'Иван', 'personInn': '554867861887', 'middleName': 'Иванович', 'medicalInsurancePolicy': {'number': 'B2', 'expiryDate': '30.11.2034'}}
+
+
+340 19111 minkomsvyaz.esia.register-certificate-post
+POST /api/service/minkomsvyaz/esia/register-certificate HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 180
+
+{'ogrn': '1111111111111', 'orgINN': '1111111111', 'ownerType': 'SYS', 'startDate': '01.11.2017', 'expiryDate': '31.10.2018', 'serialNumber': '77665544', 'issuerOrgName': 'УД001'}
+
+
+980 19222 roskazna.gmp.import-payments-post
+POST /api/service/roskazna/gmp/import-payments HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 829
+
+{'PaymentsPackage': {'ImportedPayment': [{'paymentId': '10471020010005232407201700000001', 'purpose': 'Штраф', 'kbk': '18811630020016000140', 'oktmo': '45348000', 'supplierBillID': '18817072416285972102', 'amount': 50000, 'paymentDate': '2017-11-24', 'transKind': '01', 'Payer': {'name': 'Антонов Борис Константинович', 'payerIdentifier': '1010000000003751379232'}, 'Payee': {'name': 'УВД по ЦАО ГУ МВД России по г. Москве', 'inn': '7706012716', 'kpp': '770901011', 'OrgAccount': {'accountNumber': '40101810800000010041', 'Bank': {'bik': '044583001'}}}, 'BudgetIndex': {'status': '01', 'paytReason': '0', 'taxPeriod': '0', 'taxDocNumber': '01', 'taxDocDate': '0'}, 'receiptDate': '2017-11-24', 'AccDoc': {'accDocDate': '2017-11-24'}, 'ChangeStatus': {'meaning': '1'}}]}}
+
+
+444 19333 minkomsvyaz.user_order.pension-status-post
+POST /api/service/minkomsvyaz/user_order/pension-status HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 284
+
+{'person': {'lastName': 'Фамилия', 'firstName': 'Имя', 'secondName': 'Отчество', 'snils': '111-111-111 45', 'phone': '+7 (912) 123-22-11', 'bdate': '19.09.2014', 'passport': {'series': '22 33', 'number': '112233', 'issueCode': '123-123', 'issueDate': '29.09.2008'}}}
+
+
+392 19444 minkomsvyaz.esia.confirm-account-post
+POST /api/service/minkomsvyaz/esia/confirm-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 237
+
+{'lastName': 'Тестов', 'firstName': 'Тест', 'middleName': 'Тестович', 'snils': '135-419-238 52', 'mobile': '+7(920)4021351', 'email': 'test@test.ru', 'doc': {'type': 'RF_PASSPORT', 'series': '1111', 'number': '111111'}}
+
+
+738 19555 minkomsvyaz.esia.register-by-simplified-account-post
+POST /api/service/minkomsvyaz/esia/register-by-simplified-account HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 568
+
+{'birthPlace': 'RUS', 'oid': '123', 'rtrnCode': '133', 'addressRegistration': {'type': 'PLV', 'house': '86', 'zipCode': '111111', 'building': 'e', 'addressStr': 'Кемеровская Область, Таштагольский Район, Шерегеш Поселок городского типа'}, 'doc': {'type': 'FID_DOC', 'number': '1111111', 'issueDate': '01.10.2017'}, 'mode': 'mobile', 'snils': '229-785-346 20', 'gender': 'F', 'mobile': '+7(920)4021351', 'lastName': 'Тестов', 'birthDate': '11.11.1988', 'firstName': 'Тест', 'citizenship': 'RUS'}
+
+
+321 19666 roskazna.gmp.export-quittances-post
+POST /api/service/roskazna/gmp/export-quittances HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 168
+
+{'Paging': {'pageNumber': 1, 'pageLength': 100}, 'QuittancesExportConditions': {'kind': 'QUITTANCE', 'ChargesConditions': {'SupplierBillID': ['32117072411021588933']}}}
+
+
+877 19777 rtk.ebs.register-biometric-data-post
+POST /api/service/rtk/ebs/register-biometric-data HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 723
+
+{'BiometricData': [{'Id': 'd1b1520c-c2e9-11e8-a355-529269fb1459', 'Date': '2018-09-28T06:33:26.360094+00:00', 'PersonId': '1000363612', 'Data': [{'Modality': 'PHOTO', 'attachment': 'photo.png;dGVzdCBmaWxlIGNvbnRlbnQ='}, {'Modality': 'SOUND', 'BioMetadata': [{'Key': 'voice_1_start', 'Value': '0.000'}, {'Key': 'voice_1_end', 'Value': '6.037'}, {'Key': 'voice_1_desc', 'Value': 'digits_asc'}, {'Key': 'voice_2_start', 'Value': '6.037'}, {'Key': 'voice_2_end', 'Value': '12.167'}, {'Key': 'voice_2_desc', 'Value': 'digits_desc'}, {'Key': 'voice_3_start', 'Value': '12.167'}, {'Key': 'voice_3_end', 'Value': '18.297'}, {'Key': 'voice_3_desc', 'Value': 'digits_random'}], 'attachment': 'photo.wav;dGVzdCBmaWxlIGNvbnRlbnQ='}]}]}
+
+
+1526 19888 minkomsvyaz.user_order.change-pension-fund-post
+POST /api/service/minkomsvyaz/user_order/change-pension-fund HTTP/1.1
+Host: 127.0.0.1
+User-Agent: tank
+Accept: */*
+Connection: Close
+Content-Length: 1360
+
+{'person': {'lastName': 'Фамилия', 'firstName': 'Имя', 'secondName': 'Отчество', 'snils': '111-111-111 45', 'phone': '+7 (912) 123-22-11', 'bdate': '19.09.2014', 'passport': {'series': '22 33', 'number': '112233', 'issueCode': '123-123', 'issueDate': '29.09.2008'}}, 'draft': {'isAnotherCountry': False, 'birthPlaceULCountryText': 'США', 'birthPlaceUL_ForeignPlace': 'впвап', 'birthCity': 'Сургут', 'birthArea': 'Сургутский', 'birthRegion': 'ХантыМансийский автономный округ', 'birthPlaceULCountry': {'value': 'RUS', 'text_value': 'РФ'}, 'copyFias': 3, 'temporaryResidence1': {'post_index': '465456', 'elmCode': '45000000000', 'region': 'Ханты-Мансийский', 'regionType': 'г.', 'area': 'Внуковское', 'areaType': 'р-н.', 'city': 'Москва', 'cityType': 'г.', 'place': 'Москва', 'street': 'Андропова', 'streetType': 'пр-кт.', 'house': '1', 'building1': 'а', 'building2': 'р', 'apartment': 'р', 'houseType': 'д.'}, 'phone': '+7(965)0960664', 'chooseOkato': 3, 'firmName2': 'Публичное акционерное общество «Сбербанк России»', 'payNumber': '99999999999999999999', 'nameDPT_2_code': '046001', 'nameDPT': 'УПФР по Аннинскому району Воронежской области'}}
+
+

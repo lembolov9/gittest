@@ -1,0 +1,81 @@
+{
+  "export-charges": {
+    "Paging": {
+      "pageNumber": 1,
+      "pageLength": 100
+    },
+    "ChargesExportConditions": {
+      "kind": "CHARGESTATUS",
+      "ChargesConditions": {
+        "SupplierBillID": [ "32117072411021588933" ]
+      }
+    }
+  },
+  "export-payments": {
+    "Paging": {
+      "pageNumber": 1,
+      "pageLength": 100
+    },
+    "PaymentsExportConditions": {
+      "kind": "PAYMENT",
+      "ChargesConditions": {
+        "SupplierBillID": [ "32117072411021588933" ]
+      }
+    }
+  },
+  "export-quittances": {
+    "Paging": {
+      "pageNumber": 1,
+      "pageLength": 100
+    },
+    "QuittancesExportConditions": {
+      "kind": "QUITTANCE",
+      "ChargesConditions": {
+        "SupplierBillID": [ "32117072411021588933" ]
+      }
+    }
+  },
+  "import-payments": {
+    "PaymentsPackage": {
+      "ImportedPayment": [{
+        "paymentId": "10471020010005232407201700000001",
+        "purpose": "Штраф",
+        "kbk": "18811630020016000140",
+        "oktmo": "45348000",
+        "supplierBillID": "18817072416285972102",
+        "amount": 50000,
+        "paymentDate": "2017-11-24",
+        "transKind": "01",
+        "Payer": {
+          "name": "Антонов Борис Константинович",
+          "payerIdentifier": "1010000000003751379232"
+        },
+        "Payee": {
+          "name": "УВД по ЦАО ГУ МВД России по г. Москве",
+          "inn": "7706012716",
+          "kpp": "770901011",
+          "OrgAccount": {
+            "accountNumber": "40101810800000010041",
+            "Bank": {
+              "bik": "044583001"
+            }
+          }
+        },
+        "BudgetIndex": {
+          "status": "01",
+          "paytReason": "0",
+          "taxPeriod": "0",
+          "taxDocNumber": "01",
+          "taxDocDate": "0"
+        },
+        "receiptDate": "2017-11-24",
+        "AccDoc": {
+          "accDocDate": "2017-11-24"
+        },
+        "ChangeStatus": {
+          "meaning": "1"
+        }
+      }]
+    }
+  }
+}

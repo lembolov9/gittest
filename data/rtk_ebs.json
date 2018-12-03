@@ -1,0 +1,59 @@
+{
+  "register-biometric-data": {
+        "BiometricData": [
+            {
+                "Id": "d1b1520c-c2e9-11e8-a355-529269fb1459",
+                "Date": "2018-09-28T06:33:26.360094+00:00",
+                "PersonId": "1000363612",
+                "Data": [
+                    {
+                        "Modality": "PHOTO",
+                        "attachment": "photo.png;dGVzdCBmaWxlIGNvbnRlbnQ="
+                    },
+                    {
+                        "Modality": "SOUND",
+                        "BioMetadata": [
+                            {
+                                "Key": "voice_1_start",
+                                "Value": "0.000"
+                            },
+                            {
+                                "Key": "voice_1_end",
+                                "Value": "6.037"
+                            },
+                            {
+                                "Key": "voice_1_desc",
+                                "Value": "digits_asc"
+                            },
+                            {
+                                "Key": "voice_2_start",
+                                "Value": "6.037"
+                            },
+                            {
+                                "Key": "voice_2_end",
+                                "Value": "12.167"
+                            },
+                            {
+                                "Key": "voice_2_desc",
+                                "Value": "digits_desc"
+                            },
+                            {
+                                "Key": "voice_3_start",
+                                "Value": "12.167"
+                            },
+                            {
+                                "Key": "voice_3_end",
+                                "Value": "18.297"
+                            },
+                            {
+                                "Key": "voice_3_desc",
+                                "Value": "digits_random"
+                            }
+                        ],
+                        "attachment": "photo.wav;dGVzdCBmaWxlIGNvbnRlbnQ="
+                    }
+                ]
+            }
+        ]
+    }
+}

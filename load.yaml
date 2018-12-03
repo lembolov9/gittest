@@ -1,0 +1,16 @@
+phantom:
+  address: 127.0.0.1:8000 # [Target's address]:[target's port]
+  load_profile:
+    load_type: rps # schedule load by defining requests per second
+    schedule: step(1, 9, 2, 4) # starting from 1rps growing linearly to 10rps during 10 minutes
+  ammo_type: phantom
+  writelog: all
+overload:
+  enabled: true
+  token_file: token.txt
+  job_name: test
+  job_dsc: test description
+console:
+  enabled: true # enable console output
+telegraf:
+  enabled: false # let's disable telegraf monitoring for the first time
